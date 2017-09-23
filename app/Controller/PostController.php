@@ -3,20 +3,24 @@ namespace App\Controller;
 
 class PostController{
 
-	protected $viewsPath = '/var/www/html/app/Views/';
+	protected $viewsPath = '/var/www/html/app/Views/',
+			  $twig;
 
-	public function render($view, $variables, $template = 'default'){
+	public function __construct(){
+		require_once '/var/www/html/vendor/autoload.php';
+		$loader = new \Twig_Loader_Filesystem('app/Views'); // Dossier contenant les templates
+		$twig = new \Twig_Environment($loader, array(
+		  'cache' => false,
+		  'debug' => true
+		));
+		$this->twig = $twig;
+	}
 
-		$viewPath = $this->viewsPath . $view . '.php';
-		ob_start();
-			extract($variables);
-			require($viewPath);
-		$content = ob_get_clean();
+	public function render($view, $variables){
 
+		$view .= '.twig';
+		echo $this->twig->render($view, $variables);
 
-		$templatePath = $this->viewsPath . $template . '.php';
-		require($templatePath);
-		
 	}
 
 	public function index(){
