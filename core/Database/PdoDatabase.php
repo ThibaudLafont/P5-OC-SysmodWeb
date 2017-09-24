@@ -22,7 +22,7 @@ class PdoDatabase{
 
 	}
 
-	public function prepare($statement, $params, $entity, $one){
+	public function prepare($statement, $params, $entity, $one = false){
 
 		$req = $this->_pdo->prepare($statement);
 		$req->execute($params);

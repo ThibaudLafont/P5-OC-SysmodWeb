@@ -23,13 +23,14 @@ class PostController{
 
 	}
 
-	public function index(){
+	public function list(){
 
 		$pdo = new \Core\Database\PdoDatabase('labSQL', 'labBDD', 'root', 'pomme');
 		$table = new \App\Table\PostTable($pdo);
+
 		$posts = $table->all();
 
-		$this->render('index', compact('posts'));
+		$this->render('list', compact('posts'));
 
 	}
 
@@ -37,6 +38,7 @@ class PostController{
 
 		$pdo = new \Core\Database\PdoDatabase('labSQL', 'labBDD', 'root', 'pomme');
 		$table = new \App\Table\PostTable($pdo);
+		
 		$post = $table->find($id);
 
 		$this->render('show', compact('post'));		

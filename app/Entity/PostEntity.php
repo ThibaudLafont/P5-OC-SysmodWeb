@@ -46,7 +46,7 @@ class PostEntity{
 		if($this->_dateAjout === null) return null;
 		return $this->frenchDateRewrite($this->_dateAjout);
 	}
-
+	
 	public function getUrl(){
 		return "?p=show&id={$this->_id}";
 	}
@@ -55,5 +55,6 @@ class PostEntity{
 		$date = new \DateTime($date);
 		return $date->format('d/m/y à H\hi');
 	}
+
 
 }
