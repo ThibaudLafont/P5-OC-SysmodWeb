@@ -6,11 +6,21 @@ require('app/Autoloader.php');
 require('core/Autoloader.php');
 \Core\Autoloader::register();
 
-$controller = new App\Controller\PostController();
+$router = new \Core\Router\Router();
 
-if(isset($_GET['p'])){
-	if($_GET['p'] == 'show') $controller->show($_GET['id']);	
-	elseif($_GET['p'] == 'list') $controller->list();
+$router->route('/^\/blog\/?$/', function(){
+	$controller = new App\Controller\PostController();	
+	$controller->list();
+});
+$router->route('/^\/blog\/(.+)\/?$/', function($slug){
+	$controller = new App\Controller\PostController();	
+	$controller->show($slug);
+});
+
+try{
+	$router->execute($_SERVER['REQUEST_URI']);	
+}catch(\Exception $e){
+	$controller = new \App\Controller\PostController();
+	$controller->list(); //While home page does not exists
+	// $controller->notFound();
 }
-
-else $controller->list();
