@@ -48,7 +48,9 @@ class PostEntity{
 	}
 	
 	public function getUrl(){
-		return "?p=show&id={$this->_id}";
+		$slug = strtolower($this->getTitre());
+		$slug = str_replace(' ', '-', $slug);
+		return "/blog/{$slug}";
 	}
 
 	public function frenchDateRewrite($date){

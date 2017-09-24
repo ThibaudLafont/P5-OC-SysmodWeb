@@ -18,8 +18,12 @@ class PostTable{
 		return $this->db->query("SELECT * FROM post", '\App\Entity\PostEntity');
 	}
 
-	public function find($id){
-		return $this->db->prepare("SELECT * FROM post WHERE id=?", [$id], '\App\Entity\PostEntity', true);
+	public function find($param){
+
+		$titre = ucfirst($param);
+		$titre = str_replace('-', ' ', $titre);
+
+		return $this->db->prepare("SELECT * FROM post WHERE titre=?", [$titre], '\App\Entity\PostEntity', true);
 	}
 
 }

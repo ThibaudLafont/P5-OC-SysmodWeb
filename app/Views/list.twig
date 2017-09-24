@@ -1,7 +1,6 @@
 {% extends "default.twig" %}
 
 {% block view %}
-	<a href="/">Accueil</a>
 	{% for post in posts %}
 		<section style="width: 850px; margin: auto">
 			<h3>{{ post.titre }}, <em>{{ post.dateAjout }}</em></h3>
