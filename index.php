@@ -1,4 +1,5 @@
 <?php
+define('ROOT', __DIR__);
 
 require('app/Autoloader.php');
 \App\Autoloader::register();
@@ -7,7 +8,9 @@ require('core/Autoloader.php');
 
 $controller = new App\Controller\PostController();
 
-if(empty($_GET['p'])) $controller->index();
-if($_GET['p'] == 'show'){
-	$controller->show($_GET['id']);	
+if(isset($_GET['p'])){
+	if($_GET['p'] == 'show') $controller->show($_GET['id']);	
+	elseif($_GET['p'] == 'list') $controller->list();
 }
+
+else $controller->list();
