@@ -26,4 +26,5 @@ class ContactEntity extends Entity{
 	public function getContent(){
 		return $this->content;
 	}
+	
 }
