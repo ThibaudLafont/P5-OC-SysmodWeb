@@ -2,7 +2,7 @@
 
 {% block view %}
 	<h1>Ajouter un article</h1>
-	<form action='/admin/ajouter-article' method='post' style="float: left; margin-left: 50px">
+	<form action='' method='post' style="float: left; margin-left: 50px">
 		{% if flash is defined %}
 			{% if flash.type == 'alert' %}
 				<div class="flash alert">{{ flash.content }}</div>	
@@ -11,7 +11,7 @@
 			{% endif %}
 		{% endif %}
 
-		{{ form.buildView|raw }}
+		{{ form|raw }}
 		<input type="submit" value="Ajouter"/>
 	</form>
 {% endblock %}

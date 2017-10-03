@@ -1,5 +1,5 @@
 <?php
-namespace Core\Service\Form\Builder;
+namespace Core\Service\Form;
 
 use Core\Model\Form\Form;
 

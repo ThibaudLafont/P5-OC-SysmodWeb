@@ -1,7 +1,7 @@
 {% extends "default.twig" %}
 
 {% block view %}
-	<form action='/send-contact-mail' method='post'>
+	<form action='' method='post'>
 		{% if flash is defined %}
 			{% if flash.type == 'alert' %}
 				<div class="flash alert">{{ flash.content }}</div>	
@@ -10,7 +10,7 @@
 			{% endif %}
 		{% endif %}
 
-		{{ form.buildView|raw }}
+		{{ form|raw }}
 		<input type="submit"/>
 	</form>
 

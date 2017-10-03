@@ -1,7 +1,7 @@
 <?php
-namespace Core\Service\Router;
+namespace Core\Service;
 
-class Router {
+class Router{
     
     private $routes = array();
     

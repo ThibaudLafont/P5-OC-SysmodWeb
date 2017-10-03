@@ -7,8 +7,10 @@ use \Core\Model\Form\Field\Text;
 //On charge les validators
 use \Core\Service\Validator\NotNull;
 use \Core\Service\Validator\MaxLength;
+//On charge le builder
+use Core\Service\Form\Builder;
 
-class Post extends \Core\Service\Form\Builder\Builder{
+class Post extends Builder{
 
 	public function build(){
 		$form = $this->getForm();
