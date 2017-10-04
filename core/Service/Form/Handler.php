@@ -19,6 +19,7 @@ abstract class Handler
         $this->setEntity();
         $this->setForm();
         $this->setClosure($closure);
+        $this->process();
     }
 
     public abstract function setEntity();
@@ -58,6 +59,10 @@ abstract class Handler
                 call_user_func($this->closure, $entity);
             }
         }
+    }
+
+    public function getView(){
+        return $this->getForm()->buildView();
     }
 
 }
