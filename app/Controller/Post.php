@@ -3,15 +3,22 @@ namespace App\Controller;
 
 class Post extends \Core\Controller\Twig {
 
-	public function index(){
+    private $table;
+
+    public function __construct($table)
+    {
+        parent::__construct();
+        $this->table = $table;
+    }
+
+    public function index(){
 
         $formHandler = new \App\Service\Form\Handler\Contact(
             function($entity){
                 vardump($entity); //Ici on placera l'action à effectuer
-            });
-        $formHandler->process();
-
-        $form = $formHandler->getForm()->buildView();
+            }
+        );
+        $form = $formHandler->getView();
 
         $this->render('index', compact('form'));
 
@@ -19,10 +26,7 @@ class Post extends \Core\Controller\Twig {
 
 	public function list(){
 
-		$pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
-		$table = new \App\Model\Table\Post($pdo);
-
-		$posts = $table->all();
+		$posts = $this->table->all();
 
 		$this->render('list', compact('posts'));
 
@@ -30,10 +34,7 @@ class Post extends \Core\Controller\Twig {
 
 	public function show($id){
 
-        $pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
-        $table = new \App\Model\Table\Post($pdo);
-
-        $post = $table->find($id);
+        $post = $this->table->find($id);
 
         $this->render('show', compact('post'));
 
@@ -41,17 +42,13 @@ class Post extends \Core\Controller\Twig {
 
     public function add(){
 
-        $pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
-        $table = new \App\Model\Table\Post($pdo);
-
+	    $table = $this->table;
         $formHandler = new \App\Service\Form\Handler\Post(
-            function($entity)use($table){
+            function($entity) use ($table){
                 vardump($entity); //Ici on placera l'action à effectuer
-//                $table->add($entity);
-            });
-        $formHandler->process();
-
-        $form = $formHandler->getForm()->buildView();
+            }
+        );
+        $form = $formHandler->getView();
 
         $this->render('Admin/index', compact('form'));
     }

@@ -1,43 +1,44 @@
 <?php
-session_start();
-define('ROOT', __DIR__);
 
 function vardump($variable){
 
-	echo '<pre>';
-	var_dump($variable);
-	echo '</pre>';
+    echo '<pre>';
+    var_dump($variable);
+    echo '</pre>';
 
 }
+
+define('ROOT', __DIR__);
 
 require('app/Autoloader.php');
 \App\Autoloader::register();
 require('core/Autoloader.php');
 \Core\Autoloader::register();
 
-$router = new \Core\Service\Router();
+$dic = \App\Service\DIC::getInstance();
+$dic->setController();
+$controller = $dic->get('Controller');
 
-$router->route('/^\/\/?$/', function(){
-	$controller = new \App\Controller\Post();
+$router = new \Core\Service\Router();
+$router->route('/^\/\/?$/', function() use ($controller){
 	$controller->index();
 });
-$router->route('/^\/blog\/?$/', function(){
-	$controller = new \App\Controller\Post();
+$router->route('/^\/blog\/?$/', function() use ($controller){
 	$controller->list();
 });
-$router->route('/^\/blog\/(.+)\/?$/', function($slug){
-	$controller = new \App\Controller\Post();
+$router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($controller){
 	$controller->show($slug);
 });
-$router->route('/^\/admin\/?$/', function(){
-	$controller = new \App\Controller\Post();
+$router->route('/^\/admin\/?$/', function() use ($controller){
 	$controller->add();
+});
+$router->route('/^\/blog\/edit\/(.+)\/?$/', function($slug) use ($controller){
+    $controller->edit($slug);
 });
 
 
 try{
 	$router->execute($_SERVER['REQUEST_URI']);	
 }catch(\Exception $e){
-	$controller = new \App\Controller\Post();
 	$controller->notFound();
 }
