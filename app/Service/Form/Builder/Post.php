@@ -15,14 +15,18 @@ class Post extends Builder{
 	public function build(){
 		$form = $this->getForm();
 		$form->addField(new Input([
-				'label' => 'Le titre',
-				'name'  => 'title',
-				'maxLength' => 255,
-				'validators' => [
-					new NotNull('Le nom doit être renseigné'),
-					new MaxLength('Le nom doit faire moins de 55 caractères', 255)
-				]
+				'name'  => 'id',
+                'type'  => 'hidden'
 			 ]))
+            ->addField(new Input([
+                'label' => 'Le titre',
+                'name'  => 'title',
+                'maxLength' => 255,
+                'validators' => [
+                    new NotNull('Le nom doit être renseigné'),
+                    new MaxLength('Le nom doit faire moins de 55 caractères', 255)
+                ]
+            ]))
 			 ->addField(new Input([
 				'label' => 'L\'Auteur',
 				'name'  => 'author',

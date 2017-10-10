@@ -1,13 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 04/10/17
- * Time: 18:13
- */
-
 namespace Core\Service;
-
 
 class DIC
 {

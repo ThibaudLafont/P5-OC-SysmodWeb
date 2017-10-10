@@ -4,20 +4,14 @@ namespace App\Service\Form\Handler;
 
 class Contact extends \Core\Service\Form\Handler
 {
-    public function setEntity()
+    public function postEntity()
     {
-        $entity_params = $this->entityParams(['name', 'email', 'content']);
-        $entity = new \App\Model\Entity\Contact($entity_params);
-        $this->entity = $entity;
+        $entity_params = $this->post2EntityParams(['name', 'email', 'content']);
+        $entity = $this->buildEntity($entity_params);
+        return $entity;
     }
 
-    public function setForm()
+    public function execute($entity)
     {
-        $entity = $this->getEntity();
-        $formBuilder = new \App\Service\Form\Builder\Contact($entity);
-        $formBuilder->build();
-        $form = $formBuilder->getForm();
-
-        $this->form = $form;
     }
 }

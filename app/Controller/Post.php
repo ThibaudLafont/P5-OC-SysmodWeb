@@ -10,21 +10,7 @@ class Post extends \Core\Controller\Twig {
         parent::__construct();
         $this->table = $table;
     }
-
-    public function index(){
-
-        $formHandler = new \App\Service\Form\Handler\Contact(
-            function($entity){
-                vardump($entity); //Ici on placera l'action à effectuer
-            }
-        );
-        $form = $formHandler->getView();
-
-        $this->render('index', compact('form'));
-
-	}
-
-	public function list(){
+    public function list(){
 
 		$posts = $this->table->all();
 
@@ -32,7 +18,7 @@ class Post extends \Core\Controller\Twig {
 
 	}
 
-	public function show($id){
+    public function show($id){
 
         $post = $this->table->find($id);
 
@@ -40,17 +26,32 @@ class Post extends \Core\Controller\Twig {
 
     }
 
+
+    public function index(){
+
+        $formHandler = new \App\Service\Form\Handler\Contact();
+        $formHandler->process();
+        $form = $formHandler->getForm()->buildView();
+
+        $this->render('index', compact('form'));
+
+    }
+
     public function add(){
 
-	    $table = $this->table;
-        $formHandler = new \App\Service\Form\Handler\Post(
-            function($entity) use ($table){
-                vardump($entity); //Ici on placera l'action à effectuer
-            }
-        );
-        $form = $formHandler->getView();
+        $formHandler = new \App\Service\Form\Handler\Post\Add();
+        $formHandler->process();
+        $form = $formHandler->getForm()->buildView();
 
         $this->render('Admin/index', compact('form'));
     }
+    public function edit($slug){
 
+        $formHandler = new \App\Service\Form\Handler\Post\Edit($slug);
+        $formHandler->process();
+
+        $form = $formHandler->getForm()->buildView();
+
+        $this->render('Admin/index', compact('form'));
+    }
 }

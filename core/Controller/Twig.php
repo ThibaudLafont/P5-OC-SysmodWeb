@@ -12,8 +12,7 @@ namespace Core\Controller;
 abstract class Twig extends \Core\Controller\Controller
 {
 
-    protected $viewsPath = ROOT . '/app/Views/',
-              $twig;
+    private $twig;
 
     public function __construct(){
         require_once ROOT . '/vendor/autoload.php';

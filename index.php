@@ -17,6 +17,7 @@ require('core/Autoloader.php');
 
 $dic = \App\Service\DIC::getInstance();
 $dic->setController();
+
 $controller = $dic->get('Controller');
 
 $router = new \Core\Service\Router();
@@ -32,7 +33,7 @@ $router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($controller){
 $router->route('/^\/admin\/?$/', function() use ($controller){
 	$controller->add();
 });
-$router->route('/^\/blog\/edit\/(.+)\/?$/', function($slug) use ($controller){
+$router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($controller){
     $controller->edit($slug);
 });
 

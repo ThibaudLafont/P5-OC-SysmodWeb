@@ -10,31 +10,34 @@ class PDO{
 		$this->_pdo = $pdo;
 	}
 
-	public function query($statement, $entity){
+	public function fetchForMe($request, $entity, $one){
+
+        if($entity !== null) $request->setFetchMode(\PDO::FETCH_CLASS, $entity);
+
+        if($one) $result = $request->fetch();
+        else     $result = $request->fetchAll();
+
+        return $result;
+    }
+
+	public function query($statement, $entity = null, $one = false){
 
 		$req = $this->_pdo->query($statement);
+        if(strpos($statement, 'INSERT')) return;
 
-		$req->setFetchMode(\PDO::FETCH_CLASS, $entity);
-
-		$results = $req->fetchAll();
-
-		return $results;
-
+        $result = $this->fetchForMe($req, $entity, $one);
+        return $result;
 	}
 
-	public function prepare($statement, $params, $entity, $one = false){
-
+	public function prepare($statement, $params, $entity = null, $one = false){
 		$req = $this->_pdo->prepare($statement);
 		$req->execute($params);
 
-		$req->setFetchMode(\PDO::FETCH_CLASS, $entity);
+        if(strpos($statement, 'INSERT')) return;
 
-		if($one){
-			return $req->fetch();
-		}else{
-			return $req->fetchAll();
-		}
+        $result = $this->fetchForMe($req, $entity, $one);
 
+        return $result;
 	}
 
 }

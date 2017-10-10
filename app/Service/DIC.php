@@ -24,12 +24,11 @@ class DIC extends \Core\Service\DIC
         });
         $this->set('Table', function(){
             $db = $this->get('Db');
-            return new \App\Model\Table\Post($db);
+            return new \App\Model\Table\Show($db);
         });
         $this->set('Controller', function(){
            $table = $this->get('Table');
            return new \App\Controller\Post($table);
         });
     }
-
 }

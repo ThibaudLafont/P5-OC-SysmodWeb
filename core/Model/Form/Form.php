@@ -32,20 +32,23 @@ class Form{
         $this->fields[] = $field;
         return $this;
     }
-    public function isValid(){
-        //On vérifie d'abord que la fonction n'a pas déja été executée
-        if($this->getIsValid() !== null) return $this->getIsValid();
-
-        //Sinon on effectue la fonction
+//    public function isValid(){
+//        //On vérifie d'abord que la fonction n'a pas déja été executée
+//        if($this->getIsValid() !== null) return $this->getIsValid();
+//
+//        //Sinon on effectue la fonction
+//        $valid = true;
+//        foreach($this->fields as $field){
+//            if(!$field->validate()) $valid = false;
+//        }
+//        return $valid;
+//    }
+    public function validate(){
         $valid = true;
         foreach($this->fields as $field){
             if(!$field->validate()) $valid = false;
         }
         return $valid;
-    }
-    public function validate(){
-        $valid = $this->isValid();
-        $this->setIsValid($valid);
     }
 
     public function buildView(){
