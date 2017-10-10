@@ -12,51 +12,39 @@ namespace App\Model\Table;
 class Admin extends \Core\Model\Table\Table
 {
 
-    private $dateTime;
-    private $entity;
+    private $now;
 
-    public function __construct($pdo, $dateTime, $entity){
+    public function __construct(\Core\Model\Db\PDO $pdo, \DateTime $dateTime){
         parent::__construct($pdo);
-        $this->dateTime = $dateTime;
-        $this->entity = $entity;
+        $this->now = $dateTime->format('Y-m-d H:i');
     }
 
-    public function add(){
+    public function statementParams($entity){
 
-        $entity = $this->entity;
-        $date = $this->dateTime->format('Y-m-d H:i');
-
-        $values = [
+        return [
             'title' => $entity->getTitle(),
             'author' => $entity->getAuthor(),
             'sum' => $entity->getSum(),
             'content' => $entity->getContent(),
-            'date' => $date
+            is_null($entity->getId()) ? 'date' : 'editDate' => $this->now
         ];
 
+    }
+
+    public function add($entity){
+
+        $values = $this->statementParams($entity);
         $this->insert('post', $values);
 
-        $url = $entity->getUrl();
-        header('Location: ' . $url);
     }
 
     public function edit($entity){
 
-        $date = $this->dateTime->format('Y-m-d H:i');
-
         $id = $entity->getId();
-        $values = [
-            'title' => $entity->getTitle(),
-            'author' => $entity->getAuthor(),
-            'sum' => $entity->getSum(),
-            'content' => $entity->getContent(),
-            'editDate' => $date
-        ];
-
+        $values = $this->statementParams($entity);
         $this->update('post', $id, $values);
 
-        $url = $entity->getUrl();
-        header('Location: ' . $url);
     }
+
 
 }

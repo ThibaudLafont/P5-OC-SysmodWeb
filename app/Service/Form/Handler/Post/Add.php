@@ -13,11 +13,9 @@ class Add extends Post
 {
     public function execute($entity)
     {
-        $pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
+        $this->getTable()->add($entity);
 
-        $myDateTime = new \DateTime('now', new \DateTimeZone('Europe/Paris'));
-
-        $table = new \App\Model\Table\Admin($pdo, $myDateTime, $entity);
-        $table->add();
+        $url = $entity->getUrl();
+        header('Location: ' . $url);
     }
 }

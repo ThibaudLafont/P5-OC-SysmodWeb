@@ -1,5 +1,5 @@
 <?php
-
+//tmp
 function vardump($variable){
 
     echo '<pre>';
@@ -8,38 +8,49 @@ function vardump($variable){
 
 }
 
+//ROOT path
 define('ROOT', __DIR__);
 
+//Autoloaders persos
 require('app/Autoloader.php');
 \App\Autoloader::register();
 require('core/Autoloader.php');
 \Core\Autoloader::register();
+//Autoloader Composer
+require_once ROOT . '/vendor/autoload.php';
 
-$dic = \App\Service\DIC::getInstance();
-$dic->setController();
+//Appel du DIC et chargement de la config
+$dic = new \Core\Service\DIC();
+$dic->addDefinitions(ROOT . '/config/config.php');
 
-$controller = $dic->get('Controller');
-
+//Chargement du router et des routes
 $router = new \Core\Service\Router();
-$router->route('/^\/\/?$/', function() use ($controller){
+//$router = $dic->get('Router');
+//$router->addDefinitions(ROOT . '/config/routes.php');
+
+$router->route('/^\/\/?$/', function() use ($dic){
+    $controller = $dic->get('Controller\Blog');
 	$controller->index();
 });
-$router->route('/^\/blog\/?$/', function() use ($controller){
+$router->route('/^\/blog\/?$/', function() use ($dic){
+    $controller = $dic->get('Controller\Post\Show');
 	$controller->list();
 });
-$router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($controller){
+$router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($dic){
+    $controller = $dic->get('Controller\Post\Show');
 	$controller->show($slug);
 });
-$router->route('/^\/admin\/?$/', function() use ($controller){
-	$controller->add();
+$router->route('/^\/admin\/?$/', function() use ($dic){
+    $dic->get('Controller\Post\Add');
 });
-$router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($controller){
-    $controller->edit($slug);
+$router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($dic){
+    $dic->get('Controller\Post\Edit', $slug);
 });
 
-
+//Execution du router
 try{
-	$router->execute($_SERVER['REQUEST_URI']);	
+    $router->execute($_SERVER['REQUEST_URI']);
 }catch(\Exception $e){
-	$controller->notFound();
+    echo'notfound';
 }
+

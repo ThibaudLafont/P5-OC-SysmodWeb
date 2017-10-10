@@ -13,28 +13,24 @@ class Edit extends Post
 {
     private $slug;
 
-    public function __construct($slug){
+    public function __construct(\App\Model\Table\Admin $admin, \App\Model\Table\Show $show, $slug){
+        parent::__construct($admin);
+        $this->setTable('show', $show);
         $this->slug = $slug;
     }
 
-    public function getEntity()
+    public function GETEntity()
     {
-        $pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
-
-        $table = new \App\Model\Table\Show($pdo);
         $slug = $this->slug;
 
-        return $table->find($slug);
+        return $this->getTable('show')->find($slug);
     }
 
     public function execute($entity)
     {
-        $pdo = new \Core\Model\Db\PDO('labSQL', 'labBDD', 'root', 'pomme');
+        $this->getTable('admin')->edit($entity);
 
-        $myDateTime = new \DateTime('now', new \DateTimeZone('Europe/Paris'));
-
-        $table = new \App\Model\Table\Admin($pdo, $myDateTime, $entity);
-
-        $table->edit($entity);
+        $url = $entity->getUrl();
+        header('Location: ' . $url);
     }
 }

@@ -12,7 +12,6 @@ abstract class Handler
 {
 
     protected $name,
-              $POST_values,
               $form;
 
     public function process(){
@@ -31,23 +30,17 @@ abstract class Handler
         }
     }
 
-
-    public abstract function postEntity();
     public abstract function execute($entity);
 
-
-    public function entity(){
-        if($_SERVER['REQUEST_METHOD'] !== 'POST') return $this->getEntity();
-        if($_SERVER['REQUEST_METHOD'] === 'POST') return $this->postEntity();
+    public abstract function POSTEntity();
+    public function GETEntity()
+    {
+        $entity = $this->buildEntity();
+        return new $entity;
     }
     public function buildEntity($entity_params = []){
         $entity_class = '\App\Model\Entity\\' . $this->getName();
         return new $entity_class($entity_params);
-    }
-    public function getEntity()
-    {
-        $entity = $this->buildEntity();
-        return new $entity;
     }
     public function post2EntityParams(Array $datas){
         $fields = [];
@@ -56,20 +49,21 @@ abstract class Handler
         }
         return $fields;
     }
-    public function setForm()
+
+    public function setForm($entity)
     {
-        $entity = $this->entity();
         $builder_class = '\App\Service\Form\Builder\\' . $this->getName();
         $formBuilder = new $builder_class($entity);
+
         $formBuilder->build();
         $form = $formBuilder->getForm();
+
         $this->form = $form;
     }
-
-
     public function getForm(){
         return $this->form;
     }
+
     public function setName(){
         $class = get_class($this); //Récupération du nom de la classe
 

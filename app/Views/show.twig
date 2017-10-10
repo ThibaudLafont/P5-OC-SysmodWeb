@@ -3,6 +3,7 @@
 {% block view %}
 
 	<h1>{{ post.title }}</h1>
+    <a href="{{ post.editUrl }}">Modifier l'article</a>
 	<span>Posté le {{ post.date }}</span>
 	<img src="{{ post.image }}">
 	<p>{{ post.content }}</p>

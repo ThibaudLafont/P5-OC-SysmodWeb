@@ -14,21 +14,13 @@ abstract class Twig extends \Core\Controller\Controller
 
     private $twig;
 
-    public function __construct(){
-        require_once ROOT . '/vendor/autoload.php';
-        $loader = new \Twig_Loader_Filesystem('app/Views'); // Dossier contenant les templates
-        $twig = new \Twig_Environment($loader, array(
-            'cache' => false,
-            'debug' => true
-        ));
+    public function __construct(\Twig_Environment $twig){
         $this->twig = $twig;
     }
 
     public function render($view, $variables){
-
         $view .= '.twig';
         echo $this->twig->render($view, $variables);
-
     }
 
 }

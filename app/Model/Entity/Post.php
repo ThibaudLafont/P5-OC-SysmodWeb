@@ -18,6 +18,7 @@ class Post extends \Core\Model\Entity\Entity{
     }
 
     public function getId(){
+        if($this->id === '') return null;
         return $this->id;
     }
     public function getTitle(){
@@ -35,17 +36,26 @@ class Post extends \Core\Model\Entity\Entity{
     public function getImage(){
         return $this->image;
     }
-    public function getDate(){
-        return $this->frenchDateRewrite($this->date);
+    public function getDate($french = true){
+        if($french) $date = $this->frenchDateRewrite($this->date);
+        else        $date = $this->date;
+        return $date;
     }
-    public function getEditDate(){
+    public function getEditDate($french = true){
         if($this->editDate === null) return null;
-        return $this->frenchDateRewrite($this->editDate);
+        if($french) $date = $this->frenchDateRewrite($this->editDate);
+        else        $date = $this->editDate;
+        return $date;
     }
     public function getUrl(){
         $slug = strtolower($this->getTitle());
         $slug = str_replace(' ', '-', $slug);
         return "/blog/{$slug}";
+    }
+    public function getEditUrl(){
+        $slug = strtolower($this->getTitle());
+        $slug = str_replace(' ', '-', $slug);
+        return "/admin/edit/{$slug}";
     }
 
     public function setId($id){
