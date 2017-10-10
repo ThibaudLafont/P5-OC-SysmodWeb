@@ -2,9 +2,10 @@
 
 {% block view %}
 
-	<h1>{{ post._titre }}</h1>
-	<span>Posté le {{ post.dateAjout }}</span>
+	<h1>{{ post.title }}</h1>
+    <a href="{{ post.editUrl }}">Modifier l'article</a>
+	<span>Posté le {{ post.date }}</span>
 	<img src="{{ post.image }}">
-	<p>{{ post.contenu }}</p>
+	<p>{{ post.content }}</p>
 
 {% endblock %}

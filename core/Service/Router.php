@@ -1,14 +1,21 @@
 <?php
-namespace Core\Router;
+namespace Core\Service;
 
-class Router {
+class Router{
     
     private $routes = array();
     
     public function route($pattern, $callback) {
         $this->routes[$pattern] = $callback;
     }
-    
+    public function addDefinitions($path){
+        $routes = require($path);
+        if(is_array($routes)){
+            foreach($routes as $k => $v){
+                $this->route($k, $v);
+            }
+        }
+    }
     public function execute($uri) {
         foreach ($this->routes as $pattern => $callback) {
             if (preg_match($pattern, $uri, $params) === 1) {

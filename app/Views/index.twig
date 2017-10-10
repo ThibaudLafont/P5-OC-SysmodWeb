@@ -1,0 +1,17 @@
+{% extends "default.twig" %}
+
+{% block view %}
+	<form action='' method='post'>
+		{% if flash is defined %}
+			{% if flash.type == 'alert' %}
+				<div class="flash alert">{{ flash.content }}</div>	
+			{% elseif flash.type == 'success' %}
+				<div class="flash success">{{ flash.content }}</div>	
+			{% endif %}
+		{% endif %}
+
+		{{ form|raw }}
+		<input type="submit"/>
+	</form>
+
+{% endblock %}

@@ -4,11 +4,35 @@
 	<title>
 		Mon super blog
 	</title>
+	<style>
+		.flash{
+			padding : 25px;
+			width : 50%;
+		}
+		.flash.alert{
+			color : red;
+			border : 2px solid red;
+		}
+		.flash.success{
+			color : green;
+			border : 2px solid green;
+		}
+	</style>
 </head>
-<body>
-	<a href="/blog">Blog</a>
+<body style="margin : 50px">
+	<div style="margin-bottom : 27px">
+		<a href="/">Accueil</a>
+		<a href="/blog">Blog</a>		
+		<a href="/admin/">Administration</a>		
+	</div>
 
 	{% block view %}{% endblock %}	
 	
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
 </body>
 </html>
