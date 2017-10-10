@@ -40,7 +40,7 @@ $router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($dic){
     $controller = $dic->get('Controller\Post\Show');
 	$controller->show($slug);
 });
-$router->route('/^\/admin\/?$/', function() use ($dic){
+$router->route('/^\/admin\/add\/?$/', function() use ($dic){
     $dic->get('Controller\Post\Add');
 });
 $router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($dic){

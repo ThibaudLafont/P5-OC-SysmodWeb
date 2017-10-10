@@ -3,11 +3,18 @@
 {% block view %}
 	{% for post in posts %}
 		<section style="width: 850px; margin: auto">
-			<h3>{{ post.title }}, <em>{{ post.date }}</em></h3>
-			<img src="{{ post.image }}" style="display:block; margin: auto">
+            <div>
+                <h3>{{ post.title }}</h3>
+                {% if post.editDate is not null %}
+                    <span>Modifié le {{ post.editDate }}</span>
+                {% else %}
+                    <span>Ajouté le {{ post.date }}</span>
+                {% endif %}
+            </div>
+            <a href="{{ post.url }}"><img src="{{ post.image }}" style="display:block; margin: auto"></a>
 			<p>{{ post.sum }}</p>
 			<nav>
-				<a href="{{ post.url }}">Lire {{ post.title }}</a>
+				<span>Lire : </span><a href="{{ post.url }}">{{ post.title }}</a>
 			</nav>
 		</section>
 	{% endfor %}

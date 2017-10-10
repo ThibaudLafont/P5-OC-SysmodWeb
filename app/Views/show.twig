@@ -2,9 +2,14 @@
 
 {% block view %}
 
-	<h1>{{ post.title }}</h1>
+	<h1>{{ post.title }}</h1><span>par {{ post.author }}</span>
+	<p>{{ post.sum }}</p>
     <a href="{{ post.editUrl }}">Modifier l'article</a>
-	<span>Posté le {{ post.date }}</span>
+    {% if post.editDate is not null %}
+		<span>Modifié le {{ post.editDate }}</span><br/>
+    {% else %}
+		<span>Ajouté le {{ post.date }}</span><br/>
+    {% endif %}
 	<img src="{{ post.image }}">
 	<p>{{ post.content }}</p>
 
