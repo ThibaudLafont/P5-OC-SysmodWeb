@@ -1,16 +1,59 @@
 {% extends "default.twig" %}
 
-{% block view %}
+{% block subtitle %}
+	<section id="sub_title" class="container pb-4">
+        <section id="index_pre_head">
+            <img id="personal_photo" class="row" src="http://placehold.it/120x120" alt="">
+        </section>
+		<hr class="x-sm-hide mt-0">
+		<section class="head_blog row no-gutters">
+			<div class="col-sm head_blog_item">
+				<hr class="x-sm-show  mt-0">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/author.png" alt="">
+					<span>
+                        Posté par <br class="x-sm-hide"/>
+                        {{ post.author }}
+                    </span>
+				</div>
+				<hr class="x-sm-show">
+			</div>
+			<div class="col-sm head_blog_item">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/calendar.png" alt="">
+					<span>
+                        {% if post.editDate is not null %}
+                            Modifié le <br/>{{ post.editDate }}
+                        {% else %}
+                            Ajouté le <br/>{{ post.date }}
+                        {% endif %}
+                    </span>
+				</div>
+				<hr class="x-sm-show">
+			</div>
+			<div class="col-sm head_blog_item">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/keyboard.png" alt="">
+					<span>
+                        <a class="add-button" href="{{ post.editUrl }}">
+                            Modifier
+                        </a>
+                    </span>
+				</div>
+				<hr class="x-sm-show mb-0">
+			</div>
+		</section>
+		<hr class="x-sm-hide">
+	</section>
+{% endblock %}
 
-	<h1>{{ post.title }}</h1><span>par {{ post.author }}</span>
-	<p>{{ post.sum }}</p>
-    <a href="{{ post.editUrl }}">Modifier l'article</a>
-    {% if post.editDate is not null %}
-		<span>Modifié le {{ post.editDate }}</span><br/>
-    {% else %}
-		<span>Ajouté le {{ post.date }}</span><br/>
-    {% endif %}
-	<img src="{{ post.image }}">
-	<p>{{ post.content }}</p>
+{% block view %}
+    <article class="container py-4">
+        <section id="post_introduction" class="p-2">
+            <h4>Résumé</h4>
+            <p class="m-0">{{ post.sum }}</p>
+        </section>
+        <p class="pt-3">{{ post.content }}</p>
+    </article>
 
 {% endblock %}

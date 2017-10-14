@@ -15,7 +15,9 @@ class Show extends \Core\Controller\Twig {
 
 		$posts = $this->table->all();
 
-		$this->render('list', compact('posts'));
+        $title = "Blog";
+
+		$this->render('list', compact('title', 'posts'));
 
 	}
 
@@ -23,7 +25,9 @@ class Show extends \Core\Controller\Twig {
 
         $post = $this->table->find($id);
 
-        $this->render('show', compact('post'));
+        $title = $post->getTitle();
+
+        $this->render('show', compact('title', 'post'));
 
     }
 

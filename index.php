@@ -12,9 +12,9 @@ function vardump($variable){
 define('ROOT', __DIR__);
 
 //Autoloaders persos
-require('app/Autoloader.php');
+require(ROOT . '/app/Autoloader.php');
 \App\Autoloader::register();
-require('core/Autoloader.php');
+require(ROOT . '/core/Autoloader.php');
 \Core\Autoloader::register();
 //Autoloader Composer
 require_once ROOT . '/vendor/autoload.php';

@@ -1,0 +1,14 @@
+/*Queries Display*/
+.md-hide{
+    display:none;
+}
+/*Index Home*/
+.home_section .main_img_top{
+    padding-bottom: 1.5rem;
+}
+.home_section_content{
+    display:block;
+}
+.home_section_content div{
+    display:block;
+}

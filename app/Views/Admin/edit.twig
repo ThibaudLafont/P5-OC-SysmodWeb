@@ -1,0 +1,35 @@
+{% extends "default.twig" %}
+
+{% block subtitle %}
+    <section id="sub_title" class="container pb-4">
+        <hr class="x-sm-hide mt-0">
+        <section class="head_blog row no-gutters">
+            <div class="col-sm head_blog_item">
+                <hr class="x-sm-show  mt-0">
+                <div>
+                    <img class="head_item_img" src="/public/img/pictos/plus.png" alt="">
+                    <span>
+                        Ajouté le
+                        27/05/2107
+                    </span>
+                </div>
+                <hr class="x-sm-show">
+            </div>
+            <div class="col-sm head_blog_item">
+                <div>
+                    <img class="head_item_img" src="/public/img/pictos/keyboard.png" alt="">
+                    <span>
+                        Dernière modification le
+                        10/10/2017
+                    </span>
+                </div>
+                <hr class="x-sm-show">
+            </div>
+        </section>
+        <hr class="x-sm-hide">
+    </section>
+{% endblock %}
+
+{% block view %}
+    {% include 'Admin/form.twig' %}
+{% endblock %}

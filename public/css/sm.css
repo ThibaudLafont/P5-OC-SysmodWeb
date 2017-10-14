@@ -1,0 +1,34 @@
+/*Queries Display*/
+@media (min-width:351px) and (max-width:768px){
+}
+.x-sm-show{
+    display : inherit;
+}
+.x-sm-hide{
+    display : none;
+}
+
+
+/*Header*/
+.head_page h1{
+    padding-bottom : 0;
+}
+
+
+.head_blog{
+    padding : 0 1rem;
+}
+.head_blog_item div{
+    display : table;
+    width : 100%;
+}
+.head_item_img{
+    display: table-cell;
+    vertical-align: middle;
+    margin : 0;
+}
+.head_blog_item span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}

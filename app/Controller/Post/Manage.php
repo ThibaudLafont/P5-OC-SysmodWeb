@@ -13,16 +13,16 @@ class Manage extends \Core\Controller\Twig
 {
 
     public function add(\App\Service\Form\Handler\Post\Add $handler){
-        $this->manage('Ajouter un article', $handler);
+        $this->manage('Ajouter un article', 'Admin/add', $handler);
     }
     public function edit(\App\Service\Form\Handler\Post\Edit $handler){
-        $this->manage('Modifier un article', $handler);
+        $this->manage('Modifier un article', 'Admin/edit', $handler);
     }
 
-    public function manage($title, \Core\Service\Form\Handler $handler){
+    public function manage($title, $view,\Core\Service\Form\Handler $handler){
         $handler->process();
         $form = $handler->getForm()->buildView();
-        $this->render('Admin/index', compact('title', 'form'));
+        $this->render($view, compact('title', 'form'));
     }
 
 }

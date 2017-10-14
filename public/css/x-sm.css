@@ -1,0 +1,21 @@
+/*Queries Display*/
+.xx-sm-show{
+    display : inherit;
+}
+.xx-sm-hide{
+    display:none;
+}
+.head_blog_item div{
+    display : block;
+}
+.head_item_img{
+    display: none;
+}
+.head_blog_item span{
+    display: block;
+    text-align: center;
+}
+.add-button{
+    white-space: normal;
+    width : 100%;
+}
