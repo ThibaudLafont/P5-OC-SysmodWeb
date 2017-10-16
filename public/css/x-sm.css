@@ -1,17 +1,38 @@
 /*Queries Display*/
-.xx-sm-show{
-    display : inherit;
-}
-.xx-sm-hide{
+.x-sm-hide{
     display:none;
 }
-.head_blog_item div{
+
+
+/*Header*/
+header nav{
+    display: block !important;
+    text-align: right;
+}
+header a.navbar-brand{
+    display:block;
+    width:100%;
+    margin:0;
+}
+header a.navbar-brand img{
+    display:block;
+    margin:auto;
+}
+header a.navbar-toggler{
+    margin-top:0.25rem;
+}
+#navbarNav{
+    text-align: left;
+}
+
+/*HeadPage*/
+.sub_head_item div{
     display : block;
 }
-.head_item_img{
+.sub_head_item .head_item_img{
     display: none;
 }
-.head_blog_item span{
+.sub_head_item span{
     display: block;
     text-align: center;
 }

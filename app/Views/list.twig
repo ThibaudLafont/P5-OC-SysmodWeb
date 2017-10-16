@@ -2,72 +2,101 @@
 
 {% block subtitle %}
     <section id="sub_title" class="container pb-4">
-        <hr class="x-sm-hide mt-0">
-        <section class="head_blog row no-gutters">
-            <div class="col-sm head_blog_item">
-                <hr class="x-sm-show  mt-0">
+        <hr class="sm-hide mt-0">
+        <section class="row no-gutters">
+            <div class="col-sm sub_head_item">
+                <hr class="sm-show  mt-0">
                 <div>
                     <img class="head_item_img" src="/public/img/pictos/author.png" alt="">
                     <span>
-                        6 <br class="x-sm-hide"/>
+                        6 <br class="sm-hide"/>
                         auteurs
                     </span>
                 </div>
-                <hr class="x-sm-show">
+                <hr class="sm-show">
             </div>
-            <div class="col-sm head_blog_item">
+            <div class="col-sm sub_head_item">
                 <div>
                     <img class="head_item_img" src="/public/img/pictos/calendar.png" alt="">
                     <span>
-                        Dernier ajout <br class="x-sm-hide"/>
+                        Dernier ajout <br class="sm-hide"/>
                         10/10/2017
                     </span>
                 </div>
-                <hr class="x-sm-show">
+                <hr class="sm-show">
             </div>
-            <div class="col-sm head_blog_item">
+            <div class="col-sm sub_head_item">
                 <div>
                     <img class="head_item_img" src="/public/img/pictos/plus.png" alt="">
                     <span>
                         <a class="add-button" href="/admin/add">
-                            Ajouter un <br class="x-sm-hide"/>
+                            Ajouter un <br class="sm-hide"/>
                             article
                         </a>
                     </span>
                 </div>
-                <hr class="x-sm-show mb-0">
+                <hr class="sm-show mb-0">
             </div>
         </section>
-        <hr class="x-sm-hide">
+        <hr class="sm-hide">
     </section>
 {% endblock %}
 
-
 {% block view %}
-    <div class="container py-4">
         {% for post in posts %}
-            <article class="row post_el">
-                <div class="col-md-7">
-                    <a href="{{ post.url }}">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
-                    </a>
-                </div>
-                <div class="col-md-5 post_data">
-                    <h3>{{ post.title }}</h3>
-                    <span class="el_date">
-                        {% if post.editDate is not null %}
-                            <em>Modifié le {{ post.editDate }}</em>
-                        {% else %}
-                            <em>Ajouté le {{ post.date }}</em>
-                        {% endif %}
-                    </span>
-                    <p>{{ post.sum }}</p>
-                    <a class="btn btn-primary" href="{{ post.url }}">Lire l'article</a><br/>
+            {% if loop.index is even %}
+                {% set bgcolor = "bg-grey" %}
+            {% else %}
+                {% set bgcolor = "" %}
+            {% endif %}
+            <article class="post_el {{ bgcolor }}">
+                <div class="row">
+
+
+                    {#<hr class="w-100 mt-0">#}
+
+                    <div class="post_item_content col-md-8 post_data pb-0">
+                        <h3 class="mb-0 pb-4">{{ post.title }}</h3>
+                        <p class="m-0 py-0">
+                            {{ post.sum }}
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="v-align-parent">
+                            <ul class="post_details v-align-child-bottom">
+
+                                <hr class="orange md-show">
+
+                                <li>
+                                    <img class="sm-hide" src="/public/img/pictos/calendar.png" alt="">
+                                    <span>
+                                        {% if post.editDate is not null %}
+                                            <em>{{ post.editDate }}</em>
+                                        {% else %}
+                                            <em>{{ post.date }}</em>
+                                        {% endif %}
+                                    </span>
+                                </li>
+
+                                <hr class="orange">
+
+                                <li>
+                                    <img class="sm-hide" src="/public/img/pictos/author.png" alt="">
+                                    <span>
+                                        {{ post.author }}
+                                    </span>
+                                </li>
+
+                                <hr class="orange">
+
+                                <li>
+                                    <a class="btn btn-primary m-0" href="{{ post.url }}" style="display:block;">Lire l'article</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </article>
-
-            <hr>
-
         {% endfor %}
-    </div>
 {% endblock %}
