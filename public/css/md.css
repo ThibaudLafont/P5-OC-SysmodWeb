@@ -24,5 +24,7 @@
 
 /*Posts list*/
 .post_el{
-    text-align: justify;
+}
+.post_details{
+    text-align : center !important;
 }

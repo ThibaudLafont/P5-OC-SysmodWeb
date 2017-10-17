@@ -11,17 +11,23 @@
     src: url("/public/typos/uni.ttf");
 }
 /*A rinjecter dans bootstrap*/
-.row{
-    max-width:800px !important;
-    margin:auto;
-}
+
 /*General*/
 html{
+}
+a{
+    color: #1a1a1a;
+}
+a:hover{
+    color:#64CF77;
+    text-decoration: underline;
+    text-decoration-color: #64CF77;
 }
 hr{
     border-color: #64DF77;
 }
-hr.orange{
+hr.darkGrey
+{
     border-color:#777777;
 }
 form *{
@@ -29,6 +35,11 @@ form *{
     text-align:left;
 }
 input[type='submit']{
+    background-color: #64CF77;
+    border-width:0;
+    color:white;
+    font-size:1.25rem;
+    padding : 0.5rem 0.25rem;
     text-align:center;
 }
 footer{
@@ -62,12 +73,17 @@ footer{
     display:table-cell;
     vertical-align: bottom;
 }
+.mw-800{
+    max-width:800px;
+    margin:auto;
+}
+.mw-1200{
+    max-width:1200px;
+    margin:auto;
+}
 /*Header*/
 
 /*Queries Display*/
-.md-hide{
-    display:inherit;
-}
 .md-show{
     display:none;
 }
@@ -91,6 +107,7 @@ header a.navbar-brand img{
     box-sizing : inherit;
     background-color: #e6e6e6;
     border-bottom: 1px solid #FF5D00;
+    padding: 0 1.5rem;
 }
 .head_page h1{
     /*background-color: #64cf77;*/
@@ -111,6 +128,7 @@ header a.navbar-brand img{
     padding: 1.5rem 1rem;
     border-bottom : 1px solid #FF5D00;
     color: #5d5d5d;
+    text-align: justify;
 }
 .post_el h3{
     text-align: left;
@@ -130,6 +148,14 @@ header a.navbar-brand img{
 ul.post_details{
     padding:0;
     list-style-type: none;
+    text-align : right;
+}
+ul.post_details img{
+    margin:auto;
+}
+a.btn.btn-primary{
+    background-color: #64CF77 !important;
+    border-width: 0;
 }
 
 /*Index*/
@@ -184,4 +210,10 @@ ul.post_details{
     width:100%;
     max-width : 500px;
     margin:auto;
+}
+
+/*Post Show*/
+
+#article_show p{
+    text-align : justify;
 }

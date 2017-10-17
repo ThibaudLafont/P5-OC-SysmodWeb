@@ -1,7 +1,7 @@
 {% extends "default.twig" %}
 
 {% block subtitle %}
-	<section id="sub_title" class="container pb-4">
+	<section id="sub_title" class="container pb-4 mw-800">
 		<section id="index_pre_head">
 			<p class="m-0 p-0">"{{ post.sum }}"</p>
 		</section>
@@ -10,7 +10,7 @@
 			<div class="col-sm sub_head_item">
 				<hr class="sm-show  mt-0">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/author.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/author-v.png" alt="">
 					<span>
                         Posté par <br class="sm-hide"/>
                         {{ post.author }}
@@ -20,7 +20,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/calendar.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/calendar-v.png" alt="">
 					<span>
                         {% if post.editDate is not null %}
 							Modifié le <br class="sm-hide"/>{{ post.editDate }}
@@ -33,7 +33,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/keyboard.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/keyboard-v.png" alt="">
 					<span>
                         <a class="add-button" href="{{ post.editUrl }}">
                             Modifier
@@ -47,8 +47,11 @@
 	</section>
 {% endblock %}
 {% block view %}
-    <article class="container py-4">
-        <p class="pt-3 mb-0">{{ post.content }}</p>
-    </article>
+
+	<article id="article_show" class="container mw-800">
+			<div class="p-4">
+				{{ post.content|raw }}
+			</div>
+	</article>
 
 {% endblock %}
