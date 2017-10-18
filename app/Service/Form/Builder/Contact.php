@@ -22,7 +22,8 @@ class Contact extends Builder{
 				'maxLength' => 55,
 				'validators' => [
 					new NotNull('Le nom doit être renseigné'),
-					new MaxLength('Le nom doit faire moins de 55 caractères', 55)
+					new MaxLength('Le nom doit faire moins de 55 caractères', 55),
+                    new SelectedStrip('Balises HTML interdites', '')
 				]
 			 ]))
 			 ->addField(new Input([
@@ -32,7 +33,8 @@ class Contact extends Builder{
 				'maxLength' => 255,
 				'validators' => [
 					new NotNull('L\'email doit être renseigné'),
-					new Email('L\'email n\'est pas valide')
+					new Email('L\'email n\'est pas valide'),
+                    new SelectedStrip('Balises HTML interdites', '')
 				]
 			 ]))
 			 ->addField(new Text([
@@ -40,7 +42,8 @@ class Contact extends Builder{
 				'name'  => 'content',
 				'rows' => 7,
 				'validators' => [
-					new NotNull('Le message ne doit pas être vide')
+					new NotNull('Le message ne doit pas être vide'),
+                    new SelectedStrip('Balises HTML interdites', '')
 				]
 			 ]));
 	}
