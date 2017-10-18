@@ -12,8 +12,12 @@ class Contact extends Builder{
 
 	public function build(){
 		$form = $this->getForm();
+		$form->setValidatedMessage(
+		        'success',
+                'Le mail a bien été envoyé. Une réponse vous sera apportée sous 48h'
+        );
 		$form->addField(new Input([
-				'label' => 'Votre nom',
+				'label' => 'Votre nom *',
 				'name'  => 'name',
 				'maxLength' => 55,
 				'validators' => [
@@ -23,7 +27,7 @@ class Contact extends Builder{
 			 ]))
 			 ->addField(new Input([
 				'type'  => 'email',
-				'label' => 'Votre mail',
+				'label' => 'Votre mail *',
 				'name'  => 'email',
 				'maxLength' => 255,
 				'validators' => [
@@ -32,7 +36,7 @@ class Contact extends Builder{
 				]
 			 ]))
 			 ->addField(new Text([
-				'label' => 'Votre message',
+				'label' => 'Votre message *',
 				'name'  => 'content',
 				'rows' => 7,
 				'validators' => [

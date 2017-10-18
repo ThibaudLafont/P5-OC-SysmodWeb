@@ -23,8 +23,8 @@ class Post extends Builder{
                 'name'  => 'title',
                 'maxLength' => 255,
                 'validators' => [
-                    new NotNull('Le nom doit être renseigné'),
-                    new MaxLength('Le nom doit faire moins de 55 caractères', 255)
+                    new NotNull('Le titre doit être renseigné'),
+                    new MaxLength('Le titre doit faire moins de 55 caractères', 255)
                 ]
             ]))
 			 ->addField(new Input([

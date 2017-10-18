@@ -13,6 +13,6 @@ class Contact extends \Core\Service\Form\Handler
 
     public function execute($entity)
     {
-        vardump($entity);
+//        vardump($entity);
     }
 }

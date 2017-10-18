@@ -17,7 +17,6 @@ class Input extends Field{
 			$html .= " value=\"{$this->getValue()}\"";
 		}
 		$html .= '/>';
-		$html .= $this->buildErrorView(); 
 
 		return $html;
 	}
