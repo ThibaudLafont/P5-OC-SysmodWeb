@@ -1,17 +1,151 @@
 {% extends "default.twig" %}
 
-{% block view %}
-	<form action='' method='post'>
-		{% if flash is defined %}
-			{% if flash.type == 'alert' %}
-				<div class="flash alert">{{ flash.content }}</div>	
-			{% elseif flash.type == 'success' %}
-				<div class="flash success">{{ flash.content }}</div>	
-			{% endif %}
-		{% endif %}
+{% block subtitle %}
+	<section id="sub_title" class="container pb-4 mw-1200">
+        <section id="index_pre_head">
+            <img id="personal_photo" class="row" src="/public/img/photos/thibaud_lafont.jpg" alt="Photo de Thibaud Lafont">
+            <p>Thibaud Lafont</p>
+            <a href="https://github.com/ThibaudLafont" target="_blank"><img src="/public/img/logos/github-v.png" alt="Logo de GitHub"></a>
+            <a href="https://www.linkedin.com/in/thibaud-lafont" target="_blank"><img src="/public/img/logos/linkedIn-v.png" alt="Logo LinkedIn"></a>
+        </section>
+		<hr class="sm-hide mt-0">
+		<section class="row no-gutters">
+			<div class="col-sm sub_head_item">
+				<hr class="sm-show  mt-0">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/cv-v.png" alt="">
+					<span>
+                        <a href="#cv">
+                            Mon CV
+                        </a>
+                    </span>
+				</div>
+				<hr class="sm-show">
+			</div>
+			<div class="col-sm sub_head_item">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/mail-v.png" alt="">
+					<span>
+                        <a href="#contact">
+                            Me contacter
+                        </a>
+                    </span>
+				</div>
+				<hr class="sm-show">
+			</div>
+			<div class="col-sm sub_head_item">
+				<div>
+					<img class="head_item_img" src="/public/img/pictos/info-v.png" alt="">
+					<span>
+                        <a href="#a-propos">
+                            Qui suis-je?
+                        </a>
+                    </span>
+				</div>
+				<hr class="sm-show">
+			</div>
+            <div class="col-sm sub_head_item">
+                <div>
+                    <img class="head_item_img" src="/public/img/pictos/info-v.png" alt="">
+                    <span>
+                        <a href="/blog">
+                            Blog
+                        </a>
+                    </span>
+                </div>
+                <hr class="sm-show mb-0">
+            </div>
+		</section>
+		<hr class="sm-hide">
+	</section>
+{% endblock %}
 
-		{{ form|raw }}
-		<input type="submit"/>
-	</form>
+{% block view %}
+
+    <!-- Contact -->
+        <section id="contact" class="home_section ill_home_section p-4">
+            <div class="row mw-1200">
+                <div class="col-md-6">
+                    <div class="v-align-parent">
+                        <div class="v-align-child">
+                            <img style="max-width:267px;" class="main_img_bottom md-hide" src="/public/img/photos/adrien_matcheret-thibaud_lafont.jpg" alt="Adrien Matcheret et Thibaud Lafont - Gérants de Sysmod">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="home_section_content v-align-parent">
+                        <div class="v-align-child">
+                            <h3>Me contacter</h3>
+                            <p class="body_home_section_content"> <span class="md-hide">Le mec à droite, c'est moi !<br/></span>
+                                N'hésitez plus à me contacter, complétez le formulaire ci-dessous.</p>
+                            <form action='' method='post'>
+                                {{ form|raw }}
+                                <input type="submit"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {#-- Qui suis-je? --#}
+        <section id="a-propos" class="home_section ill_home_section bg-grey p-4">
+            <div class="row mw-1200">
+                <div class="col-md-6">
+                    <div class="home_section_content v-align-parent">
+                        <div class="v-align-child">
+                            <h3>Un développeur en développement</h3>
+                            <p class="body_home_section_content">
+                                J'ai 22ans et suis attiré depuis très jeune par l'informatique et le web.<br/>
+                                J'étudie actuellement chez OpenClassrooms un domaine passionnant : le développement d'applications en PHP, JS, HTML et CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="v-align-parent">
+                        <div class="v-align-child">
+                            <img class="main_img_bottom" src="/public/img/photos/lafont_code_session.jpg" alt="Thibaud Lafont en train de développer en PHP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {#-- Expérience --#}
+        <section id="cv" class="home_section ill_home_section p-4">
+            <div class="row mw-1200">
+                <div class="col-md-6 md-hide">
+                    <div class="v-align-parent">
+                        <div class="v-align-child">
+                            <img class="main_img_top" src="/public/img/photos/lafont_repare_telephone.jpg" alt="Thibaud Lafont en train de réparer un smartphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="home_section_content v-align-parent">
+                        <div class="v-align-child">
+                            <h3>Mon expériences</h3>
+                            <p class="body_home_section_content">
+                                <span class="block mb-2">Retrouvez mon CV via l'un des liens ci-dessous</span>
+                                <a href="https://www.linkedin.com/in/thibaud-lafont" target="_blank">
+                                    <img src="/public/img/logos/linkedIn-v.png" alt="Logo LinkedIn">
+                                </a>
+                                <a href="/public/download/cv_thibaud_lafont.pdf" target="_blank">
+                                    <img src="/public/img/pictos/document-v.png" alt="Icone représentant un document numérique">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 md-show">
+                    <div class="v-align-parent">
+                        <div class="v-align-child">
+                            <img class="main_img_bottom" src="/public/img/photos/lafont_repare_telephone.jpg" alt="Thibaud Lafont en train de réparer un smartphone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 {% endblock %}

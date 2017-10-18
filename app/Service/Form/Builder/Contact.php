@@ -34,8 +34,7 @@ class Contact extends Builder{
 			 ->addField(new Text([
 				'label' => 'Votre message',
 				'name'  => 'content',
-				'cols' => 45,
-				'rows' => 15,
+				'rows' => 7,
 				'validators' => [
 					new NotNull('Le message ne doit pas être vide')
 				]

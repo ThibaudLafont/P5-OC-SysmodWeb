@@ -12,9 +12,9 @@ function vardump($variable){
 define('ROOT', __DIR__);
 
 //Autoloaders persos
-require('app/Autoloader.php');
+require(ROOT . '/app/Autoloader.php');
 \App\Autoloader::register();
-require('core/Autoloader.php');
+require(ROOT . '/core/Autoloader.php');
 \Core\Autoloader::register();
 //Autoloader Composer
 require_once ROOT . '/vendor/autoload.php';
@@ -40,7 +40,7 @@ $router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($dic){
     $controller = $dic->get('Controller\Post\Show');
 	$controller->show($slug);
 });
-$router->route('/^\/admin\/?$/', function() use ($dic){
+$router->route('/^\/admin\/add\/?$/', function() use ($dic){
     $dic->get('Controller\Post\Add');
 });
 $router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($dic){

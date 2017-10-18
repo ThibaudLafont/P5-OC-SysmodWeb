@@ -1,0 +1,45 @@
+/*Queries Display*/
+.sm-show{
+    display : inherit;
+}
+.sm-hide{
+    display : none;
+}
+
+
+/*Header*/
+.head_page h1{
+    padding-bottom : 0;
+}
+
+.head_blog{
+    padding : 0 1rem;
+}
+.sub_head_item div{
+    display : table;
+    width : 100%;
+}
+.head_item_img{
+    display: table-cell;
+    vertical-align: middle;
+    margin : 0;
+}
+.sub_head_item span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+/*!*Index*!*/
+
+/*.home_section .main_img_top*/
+/*{*/
+    /*padding-bottom: 1.5rem;*/
+/*}*/
+/*.main_img_bottom*/
+/*{*/
+    /*padding-top: 1.5rem;*/
+/*}*/
+/*.home_section h3{*/
+    /*margin-bottom : 1rem;*/
+/*}*/

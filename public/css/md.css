@@ -1,0 +1,30 @@
+/*Queries Display*/
+.md-hide{
+    display:none;
+}
+.md-show{
+    display:block;
+}
+/*Index Home*/
+.home_section_content{
+    display:block;
+}
+.home_section_content div{
+    display:block;
+}
+.home_section .main_img_top
+{
+    padding-bottom: 1.5rem;
+}
+.main_img_bottom
+{
+    padding-top: 1.5rem;
+}
+
+
+/*Posts list*/
+.post_el{
+}
+.post_details{
+    text-align : center !important;
+}

@@ -1,0 +1,42 @@
+/*Queries Display*/
+.x-sm-hide{
+    display:none;
+}
+
+
+/*Header*/
+header nav{
+    display: block !important;
+    text-align: right;
+}
+header a.navbar-brand{
+    display:block;
+    width:100%;
+    margin:0;
+}
+header a.navbar-brand img{
+    display:block;
+    margin:auto;
+}
+header a.navbar-toggler{
+    margin-top:0.25rem;
+}
+#navbarNav{
+    text-align: left;
+}
+
+/*HeadPage*/
+.sub_head_item div{
+    display : block;
+}
+.sub_head_item .head_item_img{
+    display: none;
+}
+.sub_head_item span{
+    display: block;
+    text-align: center;
+}
+.add-button{
+    white-space: normal;
+    width : 100%;
+}

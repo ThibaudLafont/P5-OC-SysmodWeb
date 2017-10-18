@@ -28,7 +28,7 @@ class Post extends Builder{
                 ]
             ]))
 			 ->addField(new Input([
-				'label' => 'L\'Auteur',
+				'label' => 'L\'auteur',
 				'name'  => 'author',
 				'maxLength' => 55,
 				'validators' => [
@@ -39,7 +39,6 @@ class Post extends Builder{
 			 ->addField(new Text([
 				'label' => 'Le chapô',
 				'name'  => 'sum',
-				'cols' => 45,
 				'rows' => 4,
 				'validators' => [
 					new NotNull('Le chapô ne doit pas être vide'),
@@ -49,8 +48,7 @@ class Post extends Builder{
 			 ->addField(new Text([
 				'label' => 'L\'article',
 				'name'  => 'content',
-				'cols' => 45,
-				'rows' => 20,
+				'rows' => 15,
 				'validators' => [
 					new NotNull('Le contenu ne doit pas être vide')
 				]
