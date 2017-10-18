@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/bootstrap.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/.travis.yml" afterPath="$PROJECT_DIR$/vendor/twig/twig/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/CHANGELOG" afterPath="$PROJECT_DIR$/vendor/twig/twig/CHANGELOG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/filters/number_format.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/filters/number_format.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/internals.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/internals.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/doc/templates.rst" afterPath="$PROJECT_DIR$/vendor/twig/twig/doc/templates.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/Core.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/Core.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Html.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Text.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Profile.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/IntegrationTestCase.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Test/IntegrationTestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Use.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/TokenParser/Use.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/twig/twig/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Cache/FilesystemTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Cache/FilesystemTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CompilerTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CompilerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ContainerRuntimeLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ContainerRuntimeLoaderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CustomExtensionTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/CustomExtensionTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/EnvironmentTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/EnvironmentTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ErrorTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ErrorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ExpressionParserTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ExpressionParserTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/CoreTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/CoreTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/SandboxTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Extension/SandboxTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FactoryRuntimeLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FactoryRuntimeLoaderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileExtensionEscapingStrategyTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/FileExtensionEscapingStrategyTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LexerTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/LexerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ArrayTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ArrayTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ChainTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/ChainTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/FilesystemTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/FilesystemTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/NativeExtensionTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/NativeExtensionTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/CallTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Node/Expression/CallTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/NodeVisitor/OptimizerTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/NodeVisitor/OptimizerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ParserTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/ParserTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Profiler/Dumper/AbstractTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Profiler/Dumper/AbstractTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Profiler/ProfileTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Profiler/ProfileTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TemplateTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TemplateTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TemplateWrapperTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TemplateWrapperTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TokenStreamTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/TokenStreamTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Util/DeprecationCollectorTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/Util/DeprecationCollectorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/escapingTest.php" afterPath="$PROJECT_DIR$/vendor/twig/twig/test/Twig/Tests/escapingTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,48 +29,7 @@
     <favorites_list name="blog" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sm.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/sm.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="md.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/md.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -148,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Model/Table/Show.php" />
         <option value="$PROJECT_DIR$/core/Model/Db/PDO.php" />
         <option value="$PROJECT_DIR$/app/Controller/Admin.php" />
         <option value="$PROJECT_DIR$/app/Controller/Post.php" />
@@ -168,7 +81,6 @@
         <option value="$PROJECT_DIR$/app/Service/App.php" />
         <option value="$PROJECT_DIR$/config/routes.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/public/css/foundation.css" />
         <option value="$PROJECT_DIR$/app/Controller/Blog.php" />
@@ -195,10 +107,12 @@
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Text.php" />
         <option value="$PROJECT_DIR$/app/Views/index.twig" />
         <option value="$PROJECT_DIR$/app/Service/Form/Builder/Contact.php" />
-        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/core/Model/Form/Form.php" />
         <option value="$PROJECT_DIR$/app/Service/Form/Builder/Post.php" />
+        <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
       </list>
     </option>
   </component>
@@ -421,63 +335,18 @@
             <path>
               <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Builder" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Handler" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Handler" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Post" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -636,7 +505,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279071000" />
+    <option name="totallyTimeSpent" value="281039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -649,9 +518,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="244" y="108" width="1634" height="869" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18187423" sideWeight="0.4904988" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18187423" sideWeight="0.4904988" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -684,20 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Model/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Table/Show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
@@ -740,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Controller/Twig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Service/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -755,13 +602,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Service/DIC.php" />
-    <entry file="file://$PROJECT_DIR$/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Service/App.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -785,13 +625,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/foundation.css" />
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -982,14 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Model/Form/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -1022,10 +847,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="198">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <marker date="1508320017714" expanded="true" signature="1125:1202" ph="..." />
+            <marker date="1508320017714" expanded="true" signature="1280:1313" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="101" column="6" lean-forward="true" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Controller/Twig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>

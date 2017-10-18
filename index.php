@@ -16,6 +16,7 @@ require(ROOT . '/app/Autoloader.php');
 \App\Autoloader::register();
 require(ROOT . '/core/Autoloader.php');
 \Core\Autoloader::register();
+
 //Autoloader Composer
 require_once ROOT . '/vendor/autoload.php';
 
