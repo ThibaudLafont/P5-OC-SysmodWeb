@@ -26,8 +26,6 @@ $dic->addDefinitions(ROOT . '/config/config.php');
 
 //Chargement du router et des routes
 $router = new \Core\Service\Router();
-//$router = $dic->get('Router');
-//$router->addDefinitions(ROOT . '/config/routes.php');
 
 $router->route('/^\/\/?$/', function() use ($dic){
     $controller = $dic->get('Controller\Blog');

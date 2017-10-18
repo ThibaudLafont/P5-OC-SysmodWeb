@@ -7,9 +7,9 @@ use \Core\Model\Form\Field\Text;
 //On charge les validators
 use \Core\Service\Validator\NotNull;
 use \Core\Service\Validator\MaxLength;
+use \Core\Service\Validator\SelectedStrip;
 //On charge le builder
 use Core\Service\Form\Builder;
-use Core\Service\Validator\SelectedStrip;
 
 class Post extends Builder{
 

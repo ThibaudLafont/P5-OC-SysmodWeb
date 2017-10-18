@@ -5,7 +5,22 @@ namespace App\Model\Table;
 class Show extends \Core\Model\Table\Table{
 
 	public function all(){
-		return $this->db->query("SELECT * FROM post", '\App\Model\Entity\Post');
+		return $this->db->query("
+            SELECT 
+                id,
+                author,
+                title,
+                sum,
+                content,
+                date,
+                editDate,
+                CASE 
+                  WHEN editDate=null 
+                  THEN date else editDate
+                END as triDate                 
+            FROM post 
+            ORDER BY editDate DESC
+            ", '\App\Model\Entity\Post');
 	}
 
 	public function find($post_slug){
