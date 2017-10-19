@@ -11,7 +11,7 @@ class Text extends Field{
                     {$this->getLabel()}<br/>
                     {$this->buildErrorView()}
                  </label><br/>
-				 <textarea name='{$this->getName()}' rows='{$this->getRows()}' cols='{$this->getCols()}'>";
+				 <textarea id='{$this->getName()}' name='{$this->getName()}' rows='{$this->getRows()}' cols='{$this->getCols()}'>";
 		if($this->getValue() !== ''){
 			$html .= $this->getValue();
 		}

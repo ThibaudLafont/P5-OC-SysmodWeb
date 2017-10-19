@@ -1,13 +1,15 @@
 <?php
 namespace App\Service\Form\Builder;
 
+//Chargement du Builder parent
+use Core\Service\Form\Builder;
+//Validators
 use Core\Model\Form\Field\Input;
 use Core\Model\Form\Field\Text;
 use Core\Service\Validator\NotNull;
 use Core\Service\Validator\MaxLength;
 use Core\Service\Validator\Email;
 use \Core\Service\Validator\SelectedStrip;
-use Core\Service\Form\Builder;
 
 class Contact extends Builder{
 
