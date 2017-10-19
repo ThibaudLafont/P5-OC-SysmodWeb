@@ -9,7 +9,7 @@ class Input extends Field{
 	public function buildModule(){
 
 		$html  = $this->buildLabelView();
-		$html .= "<input type=\"{$this->getType()}\" name=\"{$this->getName()}\"";
+		$html .= "<input id=\"{$this->getName()}\" type=\"{$this->getType()}\" name=\"{$this->getName()}\"";
 		if($this->getMaxLength() !== null){
 			$html .= " maxlength=\"{$this->getMaxLength()}\"";
 		}
@@ -17,7 +17,6 @@ class Input extends Field{
 			$html .= " value=\"{$this->getValue()}\"";
 		}
 		$html .= '/>';
-		$html .= $this->buildErrorView(); 
 
 		return $html;
 	}

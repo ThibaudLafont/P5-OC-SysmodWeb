@@ -34,6 +34,25 @@ form *{
     width:100%;
     text-align:left;
 }
+p.form_success,
+p.form_error
+{
+    padding : 0.5rem 1rem;
+    border-width  :1px 0;
+    border-style: solid;
+    text-align:center;
+}
+p.form_success{
+    color:#64CF77;
+    border-color:#64CF77;
+}
+p.form_error{
+    color:red;
+    border-color:red;
+}
+span.red{
+    color:red;
+}
 input[type='submit']{
     background-color: #64CF77;
     border-width:0;
@@ -213,7 +232,6 @@ a.btn.btn-primary{
 }
 
 /*Post Show*/
-
 #article_show p{
     text-align : justify;
 }

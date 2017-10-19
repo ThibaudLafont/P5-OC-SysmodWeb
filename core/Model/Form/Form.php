@@ -38,13 +38,14 @@ class Form{
         foreach($this->fields as $field){
             if(!$field->validate()) $valid = false;
         }
+        $this->setIsValid($valid);
         return $valid;
     }
 
     public function buildView(){
         $html = '';
 
-        $html .= "<p>{$this->getValidatedMessage()}</p>";
+        $html .= $this->getValidatedMessage();
 
         foreach($this->fields as $field){
             $html .= $this->surround($field->buildModule());
@@ -59,7 +60,7 @@ class Form{
     public function setIsValid($valid){
         if(is_bool($valid)) $this->isValid = $valid;
     }
-    public function setValidatedMessage($message, $type){
+    public function setValidatedMessage($type, $message){
         $valid_type = ['success', 'error'];
         if(in_array($type, $valid_type)) $this->validatedMessage[$type] = $message;
     }
@@ -75,7 +76,7 @@ class Form{
         if(!is_null($valid)){
             if($valid === false) $key = 'error';
             else $key = 'success';
-            return $this->validatedMessage[$key];
+            return "<p class=\"form_{$key}\">{$this->validatedMessage[$key]}</p>";
         }
         return '';
     }

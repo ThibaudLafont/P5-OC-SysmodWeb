@@ -15,6 +15,7 @@ class Manage extends \Core\Controller\Twig
     public function add(\App\Service\Form\Handler\Post\Add $handler){
         $this->manage('Ajouter un article', 'Admin/add', $handler);
     }
+
     public function edit(\App\Service\Form\Handler\Post\Edit $handler){
         $this->manage('Modifier un article', 'Admin/edit', $handler);
     }

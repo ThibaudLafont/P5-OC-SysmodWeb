@@ -7,13 +7,15 @@ class Text extends Field{
 			$rows;
 
 	public function buildModule(){
-		$html = "<label>{$this->getLabel()}</label><br/>
-				 <textarea name='{$this->getName()}' rows='{$this->getRows()}' cols='{$this->getCols()}'>";
+		$html = "<label>
+                    {$this->getLabel()}<br/>
+                    {$this->buildErrorView()}
+                 </label><br/>
+				 <textarea id='{$this->getName()}' name='{$this->getName()}' rows='{$this->getRows()}' cols='{$this->getCols()}'>";
 		if($this->getValue() !== ''){
 			$html .= $this->getValue();
 		}
 		$html .= '</textarea>';
-		$html .= $this->buildErrorView(); 
 
 		return $html;
 	}

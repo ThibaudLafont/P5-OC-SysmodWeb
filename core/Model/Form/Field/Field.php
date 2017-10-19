@@ -38,7 +38,9 @@ abstract class Field{
     protected function buildLabelView(){
         $html = '';
         if($this->getLabel() !== null){
-            $html .= '<label>'. $this->getLabel() .'</label><br/>';
+            $html .= '<label>'. $this->getLabel() . "<br/>";
+            $html .= $this->buildErrorView();
+            $html .= '</label>';
         }
         return $html;
     }
@@ -46,7 +48,7 @@ abstract class Field{
     protected function buildErrorView(){
         $html = '';
         if($this->getErrorMessage() !== null){
-            $html .= '<span>' . $this->getErrorMessage() . '</span>';
+            $html .= '<span class="red">' . $this->getErrorMessage() . '</span>';
         }
         return $html;
     }

@@ -7,6 +7,7 @@ use \Core\Model\Form\Field\Text;
 //On charge les validators
 use \Core\Service\Validator\NotNull;
 use \Core\Service\Validator\MaxLength;
+use \Core\Service\Validator\SelectedStrip;
 //On charge le builder
 use Core\Service\Form\Builder;
 
@@ -23,8 +24,9 @@ class Post extends Builder{
                 'name'  => 'title',
                 'maxLength' => 255,
                 'validators' => [
-                    new NotNull('Le nom doit être renseigné'),
-                    new MaxLength('Le nom doit faire moins de 55 caractères', 255)
+                    new NotNull('Le titre doit être renseigné'),
+                    new MaxLength('Le titre doit faire moins de 55 caractères', 255),
+                    new SelectedStrip('Balises HTML interdites', '')
                 ]
             ]))
 			 ->addField(new Input([
@@ -33,7 +35,8 @@ class Post extends Builder{
 				'maxLength' => 55,
 				'validators' => [
 					new NotNull('L\'auteur doit être renseigné'),
-					new MaxLength('Le nom de l\'auteur doit faire moins de 55 caractères', 55)
+					new MaxLength('Le nom de l\'auteur doit faire moins de 55 caractères', 55),
+                    new SelectedStrip('Balises HTML interdites', '')
 				]
 			 ]))
 			 ->addField(new Text([
@@ -42,7 +45,8 @@ class Post extends Builder{
 				'rows' => 4,
 				'validators' => [
 					new NotNull('Le chapô ne doit pas être vide'),
-					new MaxLength('Le chapô doit faire moins de 250 caractères', 250)
+					new MaxLength('Le chapô doit faire moins de 250 caractères', 250),
+                    new SelectedStrip('Balises HTML interdites', '')
 				]
 			 ]))
 			 ->addField(new Text([
@@ -50,7 +54,8 @@ class Post extends Builder{
 				'name'  => 'content',
 				'rows' => 15,
 				'validators' => [
-					new NotNull('Le contenu ne doit pas être vide')
+					new NotNull('Le contenu ne doit pas être vide'),
+                    new SelectedStrip('Seules les balises h3, p, ul et ol sont autorisées', '<h3><p><ul><ol>')
 				]
 			 ]));
 	}
