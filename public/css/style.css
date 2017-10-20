@@ -10,7 +10,14 @@
     font-family: "uni";
     src: url("/public/typos/uni.ttf");
 }
-/*A rinjecter dans bootstrap*/
+
+/*Queries Display*/
+.md-show{
+    display:none;
+}
+.sm-show{
+    display : none;
+}
 
 /*General*/
 html{
@@ -30,6 +37,45 @@ hr.darkGrey
 {
     border-color:#777777;
 }
+footer{
+    color:white;
+    background-color: #64cf77;
+    text-align: center;
+}
+.block{
+    display:block;
+}
+
+/*Gestion de l'alignement vertical*/
+.v-align-parent{
+    display:table;
+    height : 100%;
+    width:100%;
+}
+.v-align-row-child{
+    display: table-row;
+    vertical-align : middle;
+}
+.v-align-child{
+    display:table-cell;
+    vertical-align : middle;
+}
+.v-align-child-bottom{
+    display:table-cell;
+    vertical-align: bottom;
+}
+
+/*Gestion des max-width*/
+.mw-800{
+    max-width:800px;
+    margin:auto;
+}
+.mw-1200{
+    max-width:1200px;
+    margin:auto;
+}
+
+/*Gestion des formulaires*/
 form *{
     width:100%;
     text-align:left;
@@ -61,55 +107,14 @@ input[type='submit']{
     padding : 0.5rem 0.25rem;
     text-align:center;
 }
-footer{
-    color:white;
-    background-color: #64cf77;
-    text-align: center;
-}
-.block{
-    display:block;
-}
 #post_introduction{
     border:1px solid #777777;
 }
 .bg-grey{
     background-color: #f8f8f8;
 }
-.v-align-parent{
-    display:table;
-    height : 100%;
-    width:100%;
-}
-.v-align-row-child{
-    display: table-row;
-    vertical-align : middle;
-}
-.v-align-child{
-    display:table-cell;
-    vertical-align : middle;
-}
-.v-align-child-bottom{
-    display:table-cell;
-    vertical-align: bottom;
-}
-.mw-800{
-    max-width:800px;
-    margin:auto;
-}
-.mw-1200{
-    max-width:1200px;
-    margin:auto;
-}
+
 /*Header*/
-
-/*Queries Display*/
-.md-show{
-    display:none;
-}
-.sm-show{
-    display : none;
-}
-
 /*Navbar*/
 header nav{
     background-color: #f8f8f8;
@@ -193,13 +198,6 @@ a.btn.btn-primary{
     font-style: italic;
     margin:0;
     padding: 0.5rem 0;
-}
-#home_blog_link{
-    display:block;
-    margin:auto;
-    padding : 7px 15px;
-    background-color: #cecece;
-    border-radius: 3px;
 }
 
 .home_section{

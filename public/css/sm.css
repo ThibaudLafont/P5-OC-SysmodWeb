@@ -18,6 +18,7 @@
 .sub_head_item div{
     display : table;
     width : 100%;
+    padding : 0 0.5rem;
 }
 .head_item_img{
     display: table-cell;
