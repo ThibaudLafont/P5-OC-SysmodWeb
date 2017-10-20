@@ -134,8 +134,23 @@ header a.navbar-brand img{
     padding: 0 1.5rem;
 }
 .head_page h1{
-    /*background-color: #64cf77;*/
     text-align: center;
+}
+#index_pre_head{
+    text-align: center;
+    padding-bottom :1.5rem;
+}
+#pre_head_img{
+    display:block;
+    max-width:115px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #64CF77;
+}
+#index_pre_head p{
+    font-style: italic;
+    margin:0;
+    padding: 0.5rem 0;
 }
 .head_item_img{
     display: block;
@@ -183,23 +198,6 @@ a.btn.btn-primary{
 }
 
 /*Index*/
-#index_pre_head{
-    text-align: center;
-    padding-bottom :1.5rem;
-}
-#personal_photo{
-    display:block;
-    max-width:115px;
-    margin: auto;
-    border-radius: 50%;
-    border: 2px solid #64CF77;
-}
-#index_pre_head p{
-    font-style: italic;
-    margin:0;
-    padding: 0.5rem 0;
-}
-
 .home_section{
     color:#5d5d5d;
     border-bottom: 1px solid #FF5D00;

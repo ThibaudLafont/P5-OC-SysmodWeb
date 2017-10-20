@@ -6,12 +6,10 @@
     display : none;
 }
 
-
 /*Header*/
 .head_page h1{
     padding-bottom : 0;
 }
-
 .head_blog{
     padding : 0 1rem;
 }
@@ -30,17 +28,3 @@
     vertical-align: middle;
     text-align: right;
 }
-
-/*!*Index*!*/
-
-/*.home_section .main_img_top*/
-/*{*/
-    /*padding-bottom: 1.5rem;*/
-/*}*/
-/*.main_img_bottom*/
-/*{*/
-    /*padding-top: 1.5rem;*/
-/*}*/
-/*.home_section h3{*/
-    /*margin-bottom : 1rem;*/
-/*}*/
