@@ -15,11 +15,12 @@ class Show extends \Core\Model\Table\Table{
                 date,
                 editDate,
                 CASE 
-                  WHEN editDate=null 
-                  THEN date else editDate
+                  WHEN editDate IS NULL
+                  THEN date 
+                  ELSE editDate
                 END as triDate                 
             FROM post 
-            ORDER BY editDate DESC
+            ORDER BY triDate DESC
             ", '\App\Model\Entity\Post');
 	}
 
