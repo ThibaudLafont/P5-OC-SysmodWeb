@@ -25,6 +25,8 @@ return
     },
 
     //Vendor
+    ////////////////////////////////////
+    /// Twig
     'Twig\Loader' => function(){
         return new \Twig_Loader_Filesystem(
             $this->get('viewsPath')
@@ -39,7 +41,16 @@ return
             )
         );
     },
-
+    /// SwiftMailer
+    'Swift\Transport' => function(){
+        return (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+            ->setUsername('thiblaf10@gmail.com')
+            ->setPassword('95pomme95')
+        ;
+    },
+    'Swift\Mailer' => function(){
+        return new \Swift_Mailer($this->get('Swift\Transport'));
+    },
 
 //Classes "maison"
     //Db
@@ -79,7 +90,7 @@ return
         );
     },
     'Handler\Contact' => function(){
-        return new \App\Service\Form\Handler\Contact(); //On y ajoutera SwiftMailer par la suite
+        return new \App\Service\Form\Handler\Contact($this->get('Swift\Mailer'));
     },
 
     //Controllers

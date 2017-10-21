@@ -5,6 +5,12 @@ namespace App\Service\Form\Handler;
 class Contact extends \Core\Service\Form\Handler
 {
 
+    private $mailer;
+
+    public function __construct(\Swift_Mailer $mailer){
+        $this->setMailer($mailer);
+    }
+
     public function POSTEntity()
     {
         $entity_params = $this->post2EntityParams(['name', 'email', 'content']);
@@ -14,16 +20,6 @@ class Contact extends \Core\Service\Form\Handler
 
     public function execute($entity)
     {
-        // Create the Transport
-        $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
-            ->setUsername('thiblaf10@gmail.com')
-            ->setPassword('95pomme95')
-        ;
-
-        // Create the Mailer using your created Transport
-        $mailer = new \Swift_Mailer($transport);
-
-        // Create a message
         $sender_name= $entity->getName();
         $sender_mail = $entity->getEmail();
         $message_content = $entity->getContent();
@@ -47,6 +43,13 @@ class Contact extends \Core\Service\Form\Handler
         ;
 
         // Send the message
-        $result = $mailer->send($message);
+        $this->getMailer()->send($message);
+    }
+
+    public function getMailer(){
+        return $this->mailer;
+    }
+    public function setMailer(\Swift_Mailer $mailer){
+        $this->mailer = $mailer;
     }
 }
