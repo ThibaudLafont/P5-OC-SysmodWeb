@@ -35,15 +35,15 @@ $router->route('/^\/blog\/?$/', function() use ($dic){
     $controller = $dic->get('Controller\Post\Show');
 	$controller->list();
 });
-$router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($dic){
+$router->route('/^\/blog\/(\d)\/.+\/?$/', function($id) use ($dic){
     $controller = $dic->get('Controller\Post\Show');
-	$controller->show($slug);
+	$controller->show($id);
 });
 $router->route('/^\/admin\/add\/?$/', function() use ($dic){
     $dic->get('Controller\Post\Add');
 });
-$router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($dic){
-    $dic->get('Controller\Post\Edit', $slug);
+$router->route('/^\/admin\/edit\/(\d)\/.+\/?$/', function($id) use ($dic){
+    $dic->get('Controller\Post\Edit', $id);
 });
 
 //Execution du router

@@ -48,14 +48,18 @@ class Post extends \Core\Model\Entity\Entity{
         return $date;
     }
     public function getUrl(){
-        $slug = strtolower($this->getTitle());
-        $slug = str_replace(' ', '-', $slug);
-        return "/blog/{$slug}";
+        $id = $this->getId();
+
+        $slug = $this->slugWrite();
+
+        return "/blog/{$id}/{$slug}";
     }
     public function getEditUrl(){
-        $slug = strtolower($this->getTitle());
-        $slug = str_replace(' ', '-', $slug);
-        return "/admin/edit/{$slug}";
+        $id = $this->getId();
+
+        $slug = $this->slugWrite();
+
+        return "/admin/edit/{$id}/{$slug}";
     }
 
     public function setId($id){
@@ -86,6 +90,38 @@ class Post extends \Core\Model\Entity\Entity{
     public function frenchDateRewrite($date){
         $date = new \DateTime($date);
         return $date->format('d/m/y à H\hi');
+    }
+
+    public function stripAccents($str) {
+        $str = str_replace(
+            array(
+                'à', 'â', 'á', 'À', 'Â', 'Á',
+                'î', 'Î',
+                'ô', 'ö', 'Ô', 'Ö',
+                'ù', 'û', 'ú', 'Ù', 'Û', 'Ú',
+                'é', 'è', 'ê', 'ë', 'É', 'È', 'Ê', 'Ë',
+                'ç', 'Ç',
+                '\''
+        ),
+			array(
+                'a', 'a', 'a', 'a', 'a', 'a',
+                'i', 'i',
+                'o', 'o', 'o', 'o',
+                'u', 'u', 'u', 'u', 'u', 'u',
+                'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e',
+                'c', 'c',
+                ' '
+			), $str);
+
+		return $str;
+	}
+
+	public function slugWrite(){
+        $slug = strtolower($this->getTitle());
+        $slug = $this->stripAccents($slug);
+        $slug = str_replace(' ', '-', $slug);
+
+        return $slug;
     }
 
 }

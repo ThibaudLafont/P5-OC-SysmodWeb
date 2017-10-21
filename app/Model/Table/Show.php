@@ -23,12 +23,8 @@ class Show extends \Core\Model\Table\Table{
             ", '\App\Model\Entity\Post');
 	}
 
-	public function find($post_slug){
-
-		$titre = ucfirst($post_slug);
-		$titre = str_replace('-', ' ', $titre);
-
-        return $this->db->prepare("SELECT * FROM post WHERE title=?", [$titre], '\App\Model\Entity\Post', true);
+	public function find($id){
+        return $this->db->prepare("SELECT * FROM post WHERE id=?", [$id], '\App\Model\Entity\Post', true);
 	}
 
 }
