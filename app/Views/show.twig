@@ -3,14 +3,15 @@
 {% block subtitle %}
 	<section id="sub_title" class="container pb-4 mw-800">
 		<section id="index_pre_head">
-			<p class="m-0 p-0">"{{ post.sum }}"</p>
+			<img id="pre_head_img" class="row" src="/public/img/pictos/plug-o-120.png" alt="Pictogramme d'une prise électrique">
+			<p class="m-0 p-0 pt-4">"{{ post.sum }}"</p>
 		</section>
 		<hr class="sm-hide mt-0">
 		<section class="row no-gutters">
 			<div class="col-sm sub_head_item">
 				<hr class="sm-show  mt-0">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/author-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/author-o.png" alt="">
 					<span>
                         Posté par <br class="sm-hide"/>
                         {{ post.author }}
@@ -20,7 +21,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/calendar-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/calendar-o.png" alt="">
 					<span>
                         {% if post.editDate is not null %}
 							Modifié le <br class="sm-hide"/>{{ post.editDate }}
@@ -33,7 +34,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/keyboard-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/keyboard-o.png" alt="">
 					<span>
                         <a class="add-button" href="{{ post.editUrl }}">
                             Modifier

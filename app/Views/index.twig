@@ -3,17 +3,17 @@
 {% block subtitle %}
 	<section id="sub_title" class="container pb-4 mw-1200">
         <section id="index_pre_head">
-            <img id="personal_photo" class="row" src="/public/img/photos/thibaud_lafont.jpg" alt="Photo de Thibaud Lafont">
+            <img id="pre_head_img" class="row" src="/public/img/photos/thibaud_lafont.jpg" alt="Photo de Thibaud Lafont">
             <p>Thibaud Lafont</p>
-            <a href="https://github.com/ThibaudLafont" target="_blank"><img src="/public/img/logos/github-v.png" alt="Logo de GitHub"></a>
-            <a href="https://www.linkedin.com/in/thibaud-lafont" target="_blank"><img src="/public/img/logos/linkedIn-v.png" alt="Logo LinkedIn"></a>
+            <a href="https://github.com/ThibaudLafont" target="_blank"><img src="/public/img/logos/github-b.png" alt="Logo de GitHub"></a>
+            <a href="https://www.linkedin.com/in/thibaud-lafont" target="_blank"><img src="/public/img/logos/linkedIn-b.png" alt="Logo LinkedIn"></a>
         </section>
 		<hr class="sm-hide mt-0">
 		<section class="row no-gutters">
 			<div class="col-sm sub_head_item">
 				<hr class="sm-show  mt-0">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/cv-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/xp-o.png" alt="">
 					<span>
                         <a href="#cv">
                             Mon CV
@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/mail-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/mail-o.png" alt="">
 					<span>
                         <a href="#contact">
                             Me contacter
@@ -35,7 +35,7 @@
 			</div>
 			<div class="col-sm sub_head_item">
 				<div>
-					<img class="head_item_img" src="/public/img/pictos/info-v.png" alt="">
+					<img class="head_item_img" src="/public/img/pictos/info-o.png" alt="">
 					<span>
                         <a href="#a-propos">
                             Qui suis-je?
@@ -46,7 +46,7 @@
 			</div>
             <div class="col-sm sub_head_item">
                 <div>
-                    <img class="head_item_img" src="/public/img/pictos/info-v.png" alt="">
+                    <img class="head_item_img" src="/public/img/pictos/bensen-o.png" alt="">
                     <span>
                         <a href="/blog">
                             Blog
@@ -129,10 +129,10 @@
                             <p class="body_home_section_content">
                                 <span class="block mb-2">Retrouvez mon CV via l'un des liens ci-dessous</span>
                                 <a href="https://www.linkedin.com/in/thibaud-lafont" target="_blank">
-                                    <img src="/public/img/logos/linkedIn-v.png" alt="Logo LinkedIn">
+                                    <img src="/public/img/logos/linkedIn-b.png" alt="Logo LinkedIn">
                                 </a>
                                 <a href="/public/download/cv_thibaud_lafont.pdf" target="_blank">
-                                    <img src="/public/img/pictos/document-v.png" alt="Icone représentant un document numérique">
+                                    <img src="/public/img/pictos/document-o.png" alt="Icone représentant un document numérique">
                                 </a>
                             </p>
                         </div>
@@ -147,8 +147,9 @@
                 </div>
             </div>
         </section>
-
-    <script src="/public/js/validators.js"></script>
-    <script src="/public/js/form.js"></script>
 {% endblock %}
 
+{% block scripts %}
+    <script src="/public/js/scrollToForm.js"></script>
+    <script src="/public/js/contactForm.js" type="text/javascript" async></script>
+{% endblock %}

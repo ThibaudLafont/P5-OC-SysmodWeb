@@ -5,6 +5,7 @@
 .md-show{
     display:block;
 }
+
 /*Index Home*/
 .home_section_content{
     display:block;
@@ -21,10 +22,7 @@
     padding-top: 1.5rem;
 }
 
-
 /*Posts list*/
-.post_el{
-}
 .post_details{
     text-align : center !important;
 }

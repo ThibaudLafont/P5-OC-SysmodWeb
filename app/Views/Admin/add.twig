@@ -1,4 +1,4 @@
-{% extends "default.twig" %}
+{% extends "Admin/form.twig" %}
 
 {% block subtitle %}
     <section id="sub_title" class="container pb-4 px-4">
@@ -7,7 +7,7 @@
             <div class="col-sm sub_head_item">
                 <hr class="sm-show  mt-0">
                 <div>
-                    <img class="head_item_img" src="/public/img/pictos/plus-v.png" alt="">
+                    <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
                     <span>
                         Dernier ajout le
                         10/10/2017
@@ -18,8 +18,4 @@
         </section>
         <hr class="sm-hide">
     </section>
-{% endblock %}
-
-{% block view %}
-    {% include 'Admin/form.twig' %}
 {% endblock %}
