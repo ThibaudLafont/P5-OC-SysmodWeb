@@ -21,6 +21,11 @@
 
 /*General*/
 html{
+    position : relative;
+    min-height: 100%;
+}
+body{
+    margin-bottom: 56px;
 }
 a{
     color: #1a1a1a;
@@ -38,6 +43,10 @@ hr.darkGrey
     border-color:#777777;
 }
 footer{
+    position : absolute;
+    bottom : 0;
+    left:0;
+    right:0;
     color:white;
     background-color: #64cf77;
     text-align: center;
@@ -75,6 +84,16 @@ footer{
     margin:auto;
 }
 
+/*404*/
+#redirect_parent{
+    text-align: center;
+}
+#redirect_parent a {
+    display:block;
+    background-color: #64CF77;
+    padding: 0.5rem 0.75rem;
+    color : white;
+}
 /*Gestion des formulaires*/
 form *{
     width:100%;

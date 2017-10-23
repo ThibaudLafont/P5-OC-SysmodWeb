@@ -18,9 +18,19 @@ abstract class Twig extends \Core\Controller\Controller
         $this->twig = $twig;
     }
 
-    public function render($view, $variables){
+    public function notFound(){
+        header('HTTP/1.0 404 Not Found');
+        $title = 'Erreur 404';
+        $this->render('Error/404', compact('title'));
+    }
+
+    public function render($view, $variables = null){
         $view .= '.twig';
-        echo $this->twig->render($view, $variables);
+        if($variables !== null){
+            echo $this->twig->render($view, $variables);
+        }else{
+            echo $this->twig->render($view);
+        }
     }
 
 }

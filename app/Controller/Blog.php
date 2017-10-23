@@ -15,7 +15,7 @@ class Blog extends \Core\Controller\Twig {
         $form = $this->handler->getForm()->buildView();
 
         $title = "Sysmod-Web";
-        $this->render('index', compact('title', 'form'));
+        $this->render('Public/Index', compact('title', 'form'));
     }
 
 

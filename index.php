@@ -50,6 +50,7 @@ $router->route('/^\/admin\/edit\/(\d+)\/.+\/?$/', function($id) use ($dic){
 try{
     $router->execute($_SERVER['REQUEST_URI']);
 }catch(\Exception $e){
-    echo'notfound';
+    $controller = $dic->get('Controller\Blog');
+    $controller->notFound();
 }
 

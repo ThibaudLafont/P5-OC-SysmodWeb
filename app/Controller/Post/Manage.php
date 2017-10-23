@@ -24,7 +24,7 @@ class Manage extends \Core\Controller\Twig
         $form = $handler->getForm()->buildView(); //Récup de la vue du form
 
         //Render
-        $this->render('Admin/add', compact('title', 'lastDate', 'form'));
+        $this->render('Admin/Add', compact('title', 'lastDate', 'form'));
     }
 
     public function edit(\App\Service\Form\Handler\Post\Edit $handler){
@@ -32,14 +32,14 @@ class Manage extends \Core\Controller\Twig
         $handler->process();
 
         //Récup el. entete de page
-        $title = '"' . $entity->getTitle() . '"';
         $entity = $handler->getForm()->getEntity();
+        $title = '"' . $entity->getTitle() . '"';
 
         //Récupération de la vue du formulaire
         $form = $handler->getForm()->buildView();
 
         //Render
-        $this->render('Admin/edit', compact('title', 'entity', 'form'));
+        $this->render('Admin/Edit', compact('title', 'entity', 'form'));
     }
 
 }

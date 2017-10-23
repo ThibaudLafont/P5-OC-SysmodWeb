@@ -20,7 +20,7 @@ class Show extends \Core\Controller\Twig {
         //Liste des posts
         $posts = $this->getTable()->all();
 
-		$this->render('list', compact('title', 'authors_num', 'lastDate', 'posts'));
+		$this->render('Public/List', compact('title', 'authors_num', 'lastDate', 'posts'));
 
 	}
 
@@ -31,7 +31,7 @@ class Show extends \Core\Controller\Twig {
         //Vérification de l'existance du post demandé
         if($post !== false){
             $title = $post->getTitle();
-            $this->render('show', compact('title', 'post'));
+            $this->render('Public/Show', compact('title', 'post'));
         }else{
             $this->notFound();
         }
