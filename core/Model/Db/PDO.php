@@ -40,5 +40,9 @@ class PDO{
         return $result;
 	}
 
+	public function lastInsertId(){
+	    return $this->_pdo->lastInsertId();
+    }
+
 }
 

@@ -27,22 +27,18 @@ class Contact extends \Core\Service\Form\Handler
         $message = (new \Swift_Message($sender_name . ' cherche à te joindre'))
             ->setFrom([$sender_mail => $sender_name])
             ->setTo(['thiblaf10@gmail.com' => 'Thibaud Lafont'])
-            ->setBody(
-                "
+            ->setBody("
                 / Infos sur l'expéditeur /
                 
-                Nom : {$sender_name} 
+                Nom  : {$sender_name} 
                 Mail : {$sender_mail}
                 
                 
                 / Contenu /
                 
                 $message_content
-                "
-            );
-        ;
+            ");
 
-        // Send the message
         $this->getMailer()->send($message);
     }
 

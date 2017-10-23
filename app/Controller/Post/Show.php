@@ -25,9 +25,13 @@ class Show extends \Core\Controller\Twig {
 
         $post = $this->table->find($id);
 
-        $title = $post->getTitle();
-
-        $this->render('show', compact('title', 'post'));
+        //Vérification de l'existance du post demandé
+        if($post !== false){
+            $title = $post->getTitle();
+            $this->render('show', compact('title', 'post'));
+        }else{
+            $this->notFound();
+        }
 
     }
 

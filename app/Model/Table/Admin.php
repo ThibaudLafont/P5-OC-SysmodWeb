@@ -33,9 +33,13 @@ class Admin extends \Core\Model\Table\Table
 
     public function add($entity){
 
+        //On insère le post en BDD
         $values = $this->statementParams($entity);
         $this->insert('post', $values);
 
+        //On attribue l'ID à l'entity pour qu'elle puisse construire une URL
+        $id = $this->db->lastInsertId();
+        $entity->setId($id);
     }
 
     public function edit($entity){
