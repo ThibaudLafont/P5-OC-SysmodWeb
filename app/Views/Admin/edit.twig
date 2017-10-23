@@ -9,8 +9,8 @@
                 <div>
                     <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
                     <span>
-                        Ajouté le
-                        27/05/2107
+                        Ajouté le <br class="sm-hide"/>
+                        {{ entity.date }}
                     </span>
                 </div>
                 <hr class="sm-show">
@@ -19,8 +19,12 @@
                 <div>
                     <img class="head_item_img" src="/public/img/pictos/keyboard-o.png" alt="">
                     <span>
-                        Dernière modification le
-                        10/10/2017
+                        {% if entity.editDate is not null %}
+                            Dernière modification le <br class="sm-hide"/>
+                            {{ entity.editDate }}
+                        {% else %}
+                            Jamais modifié
+                        {% endif %}
                     </span>
                 </div>
                 <hr class="sm-show">

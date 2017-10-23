@@ -116,7 +116,11 @@ return
 //Call
     'Controller\Post\Add' => function(){
         $controller = $this->get('Controller\Post\Manage');
-        $controller->add($this->get('Handler\Add'));
+
+        $table = $this->get('Table\Show');
+        $handler = $this->get('Handler\Add');
+
+        $controller->add($handler, $table);
     },
     'Controller\Post\Edit' => function($slug){
         $controller = $this->get('Controller\Post\Manage');

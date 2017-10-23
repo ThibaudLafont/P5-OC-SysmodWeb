@@ -28,4 +28,12 @@ class Show extends \Core\Model\Table\Table{
         return $this->db->prepare("SELECT * FROM post WHERE id=?", [$id], '\App\Model\Entity\Post', true);
 	}
 
+	public function lastInsertDate(){
+	    return $this->db->query("SELECT MAX(date) as date FROM post", '\App\Model\Entity\Post', true);
+    }
+
+    public function authorsNumber(){
+	    return $this->db->query("SELECT COUNT(DISTINCT author) FROM post", null, true);
+    }
+
 }

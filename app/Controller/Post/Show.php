@@ -8,22 +8,25 @@ class Show extends \Core\Controller\Twig {
     public function __construct(\Twig_Environment $twig, \App\Model\Table\Show $table)
     {
         parent::__construct($twig);
-        $this->table = $table;
+        $this->setTable($table);
     }
 
     public function list(){
-
-		$posts = $this->table->all();
-
+        //Éléments du header
         $title = "Blog";
+        $authors_num = $this->getTable()->authorsNumber()[0];
+        $lastDate = $this->getTable()->lastInsertDate()->getDate();
 
-		$this->render('list', compact('title', 'posts'));
+        //Liste des posts
+        $posts = $this->getTable()->all();
+
+		$this->render('list', compact('title', 'authors_num', 'lastDate', 'posts'));
 
 	}
 
     public function show($id){
-
-        $post = $this->table->find($id);
+        //Récupération du post
+        $post = $this->getTable()->find($id);
 
         //Vérification de l'existance du post demandé
         if($post !== false){
@@ -32,7 +35,14 @@ class Show extends \Core\Controller\Twig {
         }else{
             $this->notFound();
         }
+    }
 
+    public function getTable(){
+        return $this->table;
+    }
+    
+    public function setTable(\App\Model\Table\Show $table){
+        $this->table = $table;
     }
 
 }
