@@ -79,7 +79,7 @@ return
         return new \App\Service\Router($this);
     },
     'Service\Mailer' => function(){
-        return new \Core\Service\Mailer($this->get('Swift\Mailer'));
+        return new \App\Service\Mailer($this->get('Swift\Mailer'));
     },
 
     //FormHandlers
