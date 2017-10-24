@@ -2,16 +2,27 @@
 return
 [
 //Variables d'environnement
+    //PDO
     'db_host' => 'labSQL',
     'db_name' => 'labBDD',
     'db_user' => 'root',
     'db_pass' => 'pomme',
 
+    //TWIG
     'viewsPath' => ROOT . '/app/Views',
+
+    //SWIFTMAILER
+    'smtp_host'         => 'smtp.gmail.com',
+    'smtp_port'         => '465',
+    'mail_protocol'     => 'ssl',
+
+    'mail_user' => 'thiblaf10@gmail.com',
+    'mail_pass' => '95pomme95',
 
 
 //Classes externes
     //Natives
+    /////////
     'DateTimeZone' => function(){
         return new \DateTimeZone(
             'Europe/Paris'
@@ -25,7 +36,7 @@ return
     },
 
     //Vendor
-    ////////////////////////////////////
+    ////////
     /// Twig
     'Twig\Loader' => function(){
         return new \Twig_Loader_Filesystem(
@@ -43,9 +54,15 @@ return
     },
     /// SwiftMailer
     'Swift\Transport' => function(){
-        return (new \Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
-            ->setUsername('thiblaf10@gmail.com')
-            ->setPassword('95pomme95')
+        $transport = new \Swift_SmtpTransport(
+            $this->get('smtp_host'),
+            $this->get('smtp_port'),
+            $this->get('mail_protocol')
+        );
+
+        return $transport
+            ->setUsername($this->get('mail_user'))
+            ->setPassword($this->get('mail_pass'))
         ;
     },
     'Swift\Mailer' => function(){
@@ -76,6 +93,11 @@ return
         );
     },
 
+    //Service
+    'Service\Mailer' => function(){
+        return new \Core\Service\Mailer($this->get('Swift\Mailer'));
+    },
+
     //FormHandlers
     'Handler\Add' => function(){
         return new \App\Service\Form\Handler\Post\Add(
@@ -90,7 +112,7 @@ return
         );
     },
     'Handler\Contact' => function(){
-        return new \App\Service\Form\Handler\Contact($this->get('Swift\Mailer'));
+        return new \App\Service\Form\Handler\Contact($this->get('Service\Mailer'));
     },
 
     //Controllers
@@ -111,7 +133,6 @@ return
             $this->get('Twig\Environnement')
         );
     },
-
 
 //Call
     'Controller\Post\Add' => function(){
