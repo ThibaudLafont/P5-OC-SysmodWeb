@@ -1,16 +1,3 @@
-@font-face {
-    font-family: "code";
-    src: url("/public/typos/code.otf");
-}
-@font-face {
-    font-family: "mono";
-    src: url("/public/typos/mono.ttf");
-}
-@font-face {
-    font-family: "uni";
-    src: url("/public/typos/uni.ttf");
-}
-
 /*Queries Display*/
 .md-show{
     display:none;

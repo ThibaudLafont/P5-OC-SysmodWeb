@@ -1,18 +1,24 @@
 <?php
 namespace App\Service\Form\Builder;
 
-//On charge les fields
+//Uses
+//fields
 use \Core\Model\Form\Field\Input;
 use \Core\Model\Form\Field\Text;
-//On charge les validators
+//validators
 use \Core\Service\Validator\NotNull;
 use \Core\Service\Validator\MaxLength;
 use \Core\Service\Validator\SelectedStrip;
-//On charge le builder
-use Core\Service\Form\Builder;
 
-class Post extends Builder{
+/**
+ * Class Post
+ * @package App\Service\Form\Builder
+ */
+class Post extends \Core\Service\Form\Builder{
 
+    /**
+     * Voir doc \Core\Service\Form\Builder::build();
+     */
 	public function build(){
 		$form = $this->getForm();
 		$form->addField(new Input([
@@ -57,7 +63,8 @@ class Post extends Builder{
 					new NotNull('Le contenu ne doit pas être vide'),
                     new SelectedStrip('Seules les balises h3, p, ul et ol sont autorisées', '<h3><p><ul><ol>')
 				]
-			 ]));
+			 ])
+         );
 	}
 
 }

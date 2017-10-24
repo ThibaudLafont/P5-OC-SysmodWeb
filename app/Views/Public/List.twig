@@ -1,113 +1,166 @@
 {% extends "Templates/Default.twig" %}
 
 {% block subtitle %}
-    <section id="sub_title" class="container pb-4 mw-800">
-        <section id="index_pre_head">
-            <img id="pre_head_img" class="row" src="/public/img/pictos/bensen-o-120.png" alt="Pictogramme d'un erlenmeyer">
-        </section>
-        <hr class="sm-hide mt-0">
-        <section class="row no-gutters">
-            <div class="col-sm sub_head_item">
-                <hr class="sm-show  mt-0">
-                <div>
-                    <img class="head_item_img" src="/public/img/pictos/author-o.png" alt="">
-                    <span>
-                        {{ authors_num }} <br class="sm-hide"/>
-                        auteurs
-                    </span>
-                </div>
-                <hr class="sm-show">
-            </div>
-            <div class="col-sm sub_head_item">
-                <div>
-                    <img class="head_item_img" src="/public/img/pictos/calendar-o.png" alt="">
-                    <span>
-                        Dernier ajout <br class="sm-hide"/>
-                        {{ lastDate }}
-                    </span>
-                </div>
-                <hr class="sm-show">
-            </div>
-            <div class="col-sm sub_head_item">
-                <div>
-                    <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
-                    <span>
-                        <a class="add-button" href="/admin/add">
-                            Ajouter un <br class="sm-hide"/>
-                            article
-                        </a>
-                    </span>
-                </div>
-                <hr class="sm-show mb-0">
-            </div>
-        </section>
-        <hr class="sm-hide">
+
+<section id="sub_title" class="container pb-4 mw-800">
+
+    <!--prehead-->
+    <section id="index_pre_head">
+        <img id="pre_head_img" class="row" src="/public/img/pictos/bensen-o-120.png" alt="Pictogramme d'un erlenmeyer">
     </section>
+
+    <hr class="sm-hide mt-0">
+
+    <!--Sous section-->
+    <section class="row no-gutters">
+
+        <div class="col-sm sub_head_item">
+            <hr class="sm-show  mt-0">
+            <div>
+
+                <!-- 1 -->
+                <img class="head_item_img" src="/public/img/pictos/author-o.png" alt="">
+                <span>
+
+                    <!-- Nbre auteurs -->
+                    {{ authors_num }} <br class="sm-hide"/>
+                    auteurs
+
+                </span>
+
+            </div>
+            <hr class="sm-show">
+        </div>
+
+        <div class="col-sm sub_head_item">
+            <div>
+
+                <!-- 2 -->
+                <img class="head_item_img" src="/public/img/pictos/calendar-o.png" alt="">
+                <span>
+
+                    <!-- Dernier ajout le -->
+                    Dernier ajout <br class="sm-hide"/>
+                    {{ lastDate }}
+
+                </span>
+
+            </div>
+            <hr class="sm-show">
+        </div>
+
+        <div class="col-sm sub_head_item">
+            <div>
+
+                <!-- 3 -->
+                <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
+                <span>
+
+                    <!--Lien ajout post -->
+                    <a class="add-button" href="/admin/add">
+                        Ajouter un <br class="sm-hide"/>
+                        article
+                    </a>
+
+                </span>
+
+            </div>
+            <hr class="sm-show mb-0">
+        </div>
+
+    </section>
+
+    <hr class="sm-hide">
+
+</section>
+
 {% endblock %}
 
 {% block view %}
-        {% for post in posts %}
-            {% if loop.index is even %}
-                {% set bgcolor = "bg-grey" %}
-            {% else %}
-                {% set bgcolor = "" %}
-            {% endif %}
-            <article class="post_el {{ bgcolor }}">
-                <div class="row mw-800">
 
+{% for post in posts %}
 
-                    <h3 class="col-12 mb-0 pb-3">{{ post.title }}</h3>
-                    {#<hr class="w-100 mt-0">#}
+    {#-- Détermination du background du post --#}
+    {% if loop.index is even %}
+        {% set bgcolor = "bg-grey" %}
+    {% else %}
+        {% set bgcolor = "" %}
+    {% endif %}
 
-                    <div class="post_item_content col-md-8 post_data pb-0">
-                        <p class="m-0 py-0">
-                            {{ post.sum }}
-                        </p>
-                    </div>
+    {#-- Post --#}
+    <article class="post_el {{ bgcolor }}">
 
-                    <div class="col-md-4">
-                        <div class="v-align-parent">
-                            <ul class="post_details v-align-child-bottom">
+        <div class="row mw-800">
 
-                                <hr class="darkGrey md-show mt-4">
+            <!-- Titre -->
+            <h3 class="col-12 mb-0 pb-3">{{ post.title }}</h3>
 
-                                <li class="row no-gutters px-2">
-                                    <img class="x-sm-hide" src="/public/img/pictos/calendar-o.png" alt="">
-                                    <span class="col">
-                                        <div class="v-align-parent">
-                                            <em class="v-align-child">
-                                                {% if post.editDate is not null %}
-                                                    [M] {{ post.editDate }}
-                                                {% else %}
-                                                    [A] {{ post.date }}
-                                                {% endif %}
-                                            </em>
-                                        </div>
-                                    </span>
-                                </li>
+            <div class="post_item_content col-md-8 post_data pb-0">
+                <p class="m-0 py-0">
 
-                                <hr class="darkGrey">
+                    <!-- Chapo -->
+                    {{ post.sum }}
 
-                                <li class="row no-gutters px-2">
-                                    <img class="x-sm-hide" src="/public/img/pictos/author-o.png" alt="">
-                                    <span class="col">
-                                        <div class="v-align-parent">
-                                            <em class="v-align-child">
-                                                Par {{ post.author }}
-                                            </em>
-                                        </div>
-                                    </span>
-                                </li>
+                </p>
+            </div>
 
-                                <hr class="darkGrey mb-4">
+            <div class="col-md-4">
+                <div class="v-align-parent">
+                    <ul class="post_details v-align-child-bottom">
 
-                                <li class="px-2">
-                                    <a class="btn btn-primary mb-2" href="{{ post.url }}" style="display:block;">Lire l'article</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        <hr class="darkGrey md-show mt-4">
+
+                        <li class="row no-gutters px-2">
+                            <img class="x-sm-hide" src="/public/img/pictos/calendar-o.png" alt="">
+                            <span class="col">
+                                <div class="v-align-parent">
+                                    <em class="v-align-child">
+
+                                        <!--Date-->
+                                        {% if post.editDate is not null %}
+                                            [M] {{ post.editDate }}
+                                        {% else %}
+                                            [A] {{ post.date }}
+                                        {% endif %}
+
+                                    </em>
+                                </div>
+                            </span>
+                        </li>
+
+                        <hr class="darkGrey">
+
+                        <li class="row no-gutters px-2">
+                            <img class="x-sm-hide" src="/public/img/pictos/author-o.png" alt="">
+                            <span class="col">
+                                <div class="v-align-parent">
+                                    <em class="v-align-child">
+
+                                        <!-- Auteur -->
+                                        Par {{ post.author }}
+
+                                    </em>
+                                </div>
+                            </span>
+                        </li>
+
+                        <hr class="darkGrey mb-4">
+
+                        <li class="px-2">
+
+                            <!-- Lien vers détail -->
+                            <a class="btn btn-primary mb-2" href="{{ post.url }}" style="display:block;">Lire l'article</a>
+
+                        </li>
+
+                    </ul>
                 </div>
-            </article>
-        {% endfor %}
+            </div>
+
+        </div>
+
+    </article>
+
+{% endfor %}
+
 {% endblock %}

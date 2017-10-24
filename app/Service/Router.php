@@ -1,23 +1,39 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 24/10/17
- * Time: 14:32
- */
-
 namespace App\Service;
 
+use Core\Service\DIC;
 
+/**
+ * Class Router
+ * @package App\Service
+ *
+ * Spécialisation du router pour injecter une instance de \Core\Service\DIC
+ */
 class Router extends \Core\Service\Router
 {
 
+    /**
+     * @var DIC $dic
+     */
     private $dic;
 
-    public function __construct(\Core\Service\DIC $dic){
+    /**
+     * Router constructor.
+     * @param DIC $dic
+     */
+    public function __construct(DIC $dic){
         $this->setDIC($dic);
     }
 
+
+    ////METHODS
+
+    /**
+     * En plus de la fonction parent, renvoie vers la page 404 du blog si aucune route ne correspond
+     *
+     * @param \Core\Service\URL $uri
+     * @return mixed
+     */
     public function execute($uri)
     {
         try{
@@ -28,11 +44,24 @@ class Router extends \Core\Service\Router
         }
     }
 
+
+    ////SETTERS
+
+    /**
+     * @param DIC $dic
+     */
+    public function setDIC(DIC $dic){
+        $this->dic = $dic;
+    }
+
+
+    ////GETTERS
+
+    /**
+     * @return DIC
+     */
     public function getDIC(){
         return $this->dic;
     }
 
-    public function setDIC(\Core\Service\DIC $dic){
-        $this->dic = $dic;
-    }
 }

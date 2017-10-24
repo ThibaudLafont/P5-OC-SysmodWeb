@@ -1,18 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 10/10/17
- * Time: 17:54
- */
-
 namespace App\Controller\Post;
 
+//Uses
+use App\Model\Table\Show;
+use App\Service\Form\Handler\Post\Add;
+use App\Service\Form\Handler\Post\Edit;
 
+/**
+ * Class Manage
+ * @package App\Controller\Post
+ *
+ * Extension spécialisée de \Core\Controller\Twig servant de controller pour l'ajout et la modification de post
+ */
 class Manage extends \Core\Controller\Twig
 {
 
-    public function add(\App\Service\Form\Handler\Post\Add $handler,  \App\Model\Table\Show $table){
+    ////METHODS
+
+    /**
+     * @param Add $handler
+     * @param Show $table
+     */
+    public function add(Add $handler, Show $table){
         //Traitement form
         $handler->process();
 
@@ -27,7 +36,10 @@ class Manage extends \Core\Controller\Twig
         $this->render('Admin/Add', compact('title', 'lastDate', 'form'));
     }
 
-    public function edit(\App\Service\Form\Handler\Post\Edit $handler){
+    /**
+     * @param Edit $handler
+     */
+    public function edit(Edit $handler){
         //Traitement form
         $handler->process();
 

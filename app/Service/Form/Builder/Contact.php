@@ -1,18 +1,25 @@
 <?php
 namespace App\Service\Form\Builder;
 
-//Chargement du Builder parent
-use Core\Service\Form\Builder;
-//Validators
+//Uses
+//fields
 use Core\Model\Form\Field\Input;
 use Core\Model\Form\Field\Text;
+//validators
 use Core\Service\Validator\NotNull;
 use Core\Service\Validator\MaxLength;
 use Core\Service\Validator\Email;
 use \Core\Service\Validator\SelectedStrip;
 
-class Contact extends Builder{
+/**
+ * Class Contact
+ * @package App\Service\Form\Builder
+ */
+class Contact extends \Core\Service\Form\Builder{
 
+    /**
+     * Voir doc \Core\Service\Form\Builder::build();
+     */
 	public function build(){
 		$form = $this->getForm();
 		$form->setValidatedMessage(

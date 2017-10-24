@@ -1,21 +1,27 @@
 {% extends "Admin/Form.twig" %}
 
 {% block subtitle %}
-    <section id="sub_title" class="container pb-4 px-4">
-        <hr class="sm-hide mt-0">
-        <section class="row no-gutters">
-            <div class="col-sm sub_head_item">
-                <hr class="sm-show  mt-0">
-                <div>
-                    <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
-                    <span>
-                        Dernier ajout le<br class="sm-hide"/>
-                        {{ lastDate }}
-                    </span>
-                </div>
-                <hr class="sm-show">
+
+<section id="sub_title" class="container pb-4 px-4">
+
+    <hr class="sm-hide mt-0">
+
+    <section class="row no-gutters">
+        <div class="col-sm sub_head_item">
+            <hr class="sm-show  mt-0">
+            <div>
+                <img class="head_item_img" src="/public/img/pictos/plus-o.png" alt="">
+                <span>
+                    Dernier ajout le<br class="sm-hide"/>
+                    {{ lastDate }}
+                </span>
             </div>
-        </section>
-        <hr class="sm-hide">
+            <hr class="sm-show">
+        </div>
     </section>
+
+    <hr class="sm-hide">
+
+</section>
+
 {% endblock %}

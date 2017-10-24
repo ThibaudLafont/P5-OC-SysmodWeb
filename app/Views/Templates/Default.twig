@@ -5,8 +5,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>{{ title }} | Sysmod-Web</title>
 
@@ -58,6 +56,8 @@
     <div class="head_page">
 
         <h1 class="p-4 m-0">{{ title }}</h1>
+
+        <!-- Personnalisation sous_head_page -->
         {% block subtitle %}{% endblock %}
 
     </div>
@@ -75,10 +75,11 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-{#<script src="/vendor/jquery/jquery.js"></script>#}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="/vendor/jquery/jquery.js"></script>
+{#<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>#}
 <script src="/vendor/popper/popper.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
 <!-- Scripts personnels -->
 {% block scripts %}{% endblock %}
 

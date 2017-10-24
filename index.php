@@ -28,5 +28,3 @@ $router = $dic->get('Router');
 $router->addDefinitions(ROOT . '/config/Router/routes.php');  //Ajout des routes
 
 $router->execute($_SERVER['REQUEST_URI']);                    //Execution du router
-
-
