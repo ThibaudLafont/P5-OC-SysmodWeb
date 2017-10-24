@@ -19,15 +19,15 @@ Consignes d'installation :
 
         ->PDO
         
-            'db_host'   => 'labSQL',  //Hote SGBD
-            'db_name' => 'labBDD',    //Nom de la base
-            'db_user'   => 'root',    //User SGBD
-            'db_pass'   => 'pomme',   //Password SGBD
+            'db_host'  => 'labSQL',  //Hote SGBD
+            'db_name'  => 'labBDD',    //Nom de la base
+            'db_user'  => 'root',    //User SGBD
+            'db_pass'  => 'pomme',   //Password SGBD
             
         
         ->SWIFTMAILER
         
-            'smtp_host'         => 'smtp.gmail.com',    *//Serveur SMTP de votre client mail*
+            'smtp_host'         => 'smtp.gmail.com',    //Serveur SMTP de votre client mail
             'smtp_port'         => '465',               //Port de votre client mail
             'mail_protocol'     => 'ssl',               //Protocole mail utilisé par votre client
             
