@@ -27,7 +27,7 @@ Consignes d'installation :
         
         ->SWIFTMAILER
         
-            'smtp_host'         => 'smtp.gmail.com',    _//Serveur SMTP de votre client mail_
+            'smtp_host'         => 'smtp.gmail.com',    *//Serveur SMTP de votre client mail*
             'smtp_port'         => '465',               //Port de votre client mail
             'mail_protocol'     => 'ssl',               //Protocole mail utilisé par votre client
             
