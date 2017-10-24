@@ -1,20 +1,18 @@
 # Blog PHP   
-##### Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
+### Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
 
 Ce projet a pour but de créer un blog et portfolio administrable. 
 Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 
-Deux dépendances ont été utilisées :
+##### Deux dépendances ont été utilisées :
 - TWIG           _ Générateur de template  
 - SwiftMailer   _ Module Symphony d'envoi de mail 
 
-Consignes d'installation : 
+#### Consignes d'installation : 
 
 - Téléchargez la base de données [a renseigner](https://sysmod-web/db), puis importez la sur votre serveur SQL.  
   Le site utilise MySQL comme SGBD.
-
 - Téléchargez ou clonez ce dépot github.
-
 - Rendez vous dans /config/config.php et modifiez les différentes variables pour qu'elles correspondent à votre environnement.  
 
         ->PDO
