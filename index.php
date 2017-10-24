@@ -30,16 +30,3 @@ $router->addDefinitions(ROOT . '/config/Router/routes.php');  //Ajout des routes
 $router->execute($_SERVER['REQUEST_URI']);                    //Execution du router
 
 
-
-
-//tmp
-function vardump($variable){
-
-    echo '<pre>';
-    var_dump($variable);
-    echo '</pre>';
-
-}
-
-
-

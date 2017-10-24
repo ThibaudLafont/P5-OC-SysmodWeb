@@ -22,10 +22,10 @@ class Post extends Builder{
             ->addField(new Input([
                 'label' => 'Le titre',
                 'name'  => 'title',
-                'maxLength' => 255,
+                'maxLength' => 55,
                 'validators' => [
                     new NotNull('Le titre doit être renseigné'),
-                    new MaxLength('Le titre doit faire moins de 55 caractères', 255),
+                    new MaxLength('Le titre doit faire moins de 55 caractères', 55),
                     new SelectedStrip('Balises HTML interdites', '')
                 ]
             ]))

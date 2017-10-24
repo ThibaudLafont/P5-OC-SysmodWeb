@@ -4,14 +4,15 @@
 Ce projet a pour but de créer un blog et portfolio administrable. 
 Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 
-##### Deux dépendances ont été utilisées :
-- TWIG           _ Générateur de template  
-- SwiftMailer   _ Module Symphony d'envoi de mail 
+#### Trois dépendances ont été utilisées :
+- TWIG           _ Générateur de templates  
+- SwiftMailer    _ Module Symphony d'envoi de mail 
+- Bootstrap      _ Framework CSS
 
 #### Consignes d'installation : 
 
-- Téléchargez la base de données [a renseigner](https://sysmod-web/db), puis importez la sur votre serveur SQL.  
-  Le site utilise MySQL comme SGBD.
+- Le site utilise MySQL comme SGBD.  
+  Vous pouvez télécharger un jeu de données pour la base SQL [ici](https://sysmod-web/download/db_sysweb.sql), et l'importer sur votre serveur
 - Téléchargez ou clonez ce dépot github.
 - Rendez vous dans /config/config.php et modifiez les différentes variables pour qu'elles correspondent à votre environnement.  
 
