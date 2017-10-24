@@ -6,6 +6,11 @@
     display : none;
 }
 
+/*404*/
+#blog_link{
+    margin-top: 1rem;
+}
+
 /*Header*/
 .head_page h1{
     padding-bottom : 0;
@@ -27,4 +32,5 @@
     display: table-cell;
     vertical-align: middle;
     text-align: right;
+    padding-left:15px;
 }

@@ -183,7 +183,7 @@ header a.navbar-brand img{
 
 /*Post Element*/
 .post_el{
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     border-bottom : 1px solid #FF5D00;
     color: #5d5d5d;
     text-align: justify;

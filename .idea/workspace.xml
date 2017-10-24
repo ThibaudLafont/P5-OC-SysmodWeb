@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/Admin/add.twig" afterPath="$PROJECT_DIR$/app/Views/Admin/Add.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/Admin/edit.twig" afterPath="$PROJECT_DIR$/app/Views/Admin/Edit.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/Admin/form.twig" afterPath="$PROJECT_DIR$/app/Views/Admin/Form.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/default.twig" afterPath="$PROJECT_DIR$/app/Views/Templates/Default.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/index.twig" afterPath="$PROJECT_DIR$/app/Views/Public/Index.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/list.twig" afterPath="$PROJECT_DIR$/app/Views/Public/List.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Views/show.twig" afterPath="$PROJECT_DIR$/app/Views/Public/Show.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Blog.php" afterPath="$PROJECT_DIR$/app/Controller/Blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Post/Manage.php" afterPath="$PROJECT_DIR$/app/Controller/Post/Manage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Post/Show.php" afterPath="$PROJECT_DIR$/app/Controller/Post/Show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Controller/Twig.php" afterPath="$PROJECT_DIR$/core/Controller/Twig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Error/404.twig" afterPath="$PROJECT_DIR$/app/Views/Error/404.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Public/List.twig" afterPath="$PROJECT_DIR$/app/Views/Public/List.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/md.css" afterPath="$PROJECT_DIR$/public/css/md.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/sm.css" afterPath="$PROJECT_DIR$/public/css/sm.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/x-sm.css" afterPath="$PROJECT_DIR$/public/css/x-sm.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +34,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Twig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Controller/Twig.php">
+      <file leaf-file-name="sm.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/sm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="585">
+              <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Views/Public/List.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="91" column="50" lean-forward="false" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="x-sm.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/x-sm.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="md.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/md.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -54,48 +77,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/Post/Manage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Default.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Views/Templates/Default.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="22" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1166">
-              <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Show.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="187" column="19" lean-forward="true" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,8 +87,8 @@
       <file leaf-file-name="404.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Views/Error/404.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="330">
+              <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -162,9 +145,6 @@
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Text.php" />
         <option value="$PROJECT_DIR$/public/js/form.js" />
         <option value="$PROJECT_DIR$/app/Views/show.twig" />
-        <option value="$PROJECT_DIR$/public/css/x-sm.css" />
-        <option value="$PROJECT_DIR$/public/css/sm.css" />
-        <option value="$PROJECT_DIR$/public/css/md.css" />
         <option value="$PROJECT_DIR$/app/Views/default.twig" />
         <option value="$PROJECT_DIR$/public/js/contact.js" />
         <option value="$PROJECT_DIR$/public/js/blogForm.js" />
@@ -189,14 +169,17 @@
         <option value="$PROJECT_DIR$/app/Views/Admin/Edit.twig" />
         <option value="$PROJECT_DIR$/app/Views/Admin/Form.twig" />
         <option value="$PROJECT_DIR$/app/Views/Public/Show.twig" />
-        <option value="$PROJECT_DIR$/app/Views/Public/List.twig" />
         <option value="$PROJECT_DIR$/app/Views/Public/Index.twig" />
         <option value="$PROJECT_DIR$/app/Controller/Post/Manage.php" />
         <option value="$PROJECT_DIR$/core/Controller/Twig.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/app/Views/Error/404.twig" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/Views/Templates/Default.twig" />
+        <option value="$PROJECT_DIR$/app/Views/Error/404.twig" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/public/css/md.css" />
+        <option value="$PROJECT_DIR$/app/Views/Public/List.twig" />
+        <option value="$PROJECT_DIR$/public/css/sm.css" />
+        <option value="$PROJECT_DIR$/public/css/x-sm.css" />
       </list>
     </option>
   </component>
@@ -222,8 +205,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="151" />
+    <option name="x" value="543" />
+    <option name="y" value="145" />
     <option name="width" value="1908" />
     <option name="height" value="869" />
   </component>
@@ -313,45 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="blog" type="cbb8eebc:String" user="blog" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="blog" type="cbb8eebc:String" user="blog" />
-              <item name="core" type="cbb8eebc:String" user="core" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="blog" type="cbb8eebc:String" user="blog" />
-              <item name="core" type="cbb8eebc:String" user="core" />
-              <item name="Service" type="cbb8eebc:String" user="Service" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="blog" type="cbb8eebc:String" user="blog" />
-              <item name="core" type="cbb8eebc:String" user="core" />
-              <item name="Service" type="cbb8eebc:String" user="Service" />
-              <item name="Validator" type="cbb8eebc:String" user="Validator" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="blog" type="cbb8eebc:String" user="blog" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -450,6 +394,45 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="blog" type="cbb8eebc:String" user="blog" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="blog" type="cbb8eebc:String" user="blog" />
+              <item name="core" type="cbb8eebc:String" user="core" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="blog" type="cbb8eebc:String" user="blog" />
+              <item name="core" type="cbb8eebc:String" user="core" />
+              <item name="Service" type="cbb8eebc:String" user="Service" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="blog" type="cbb8eebc:String" user="blog" />
+              <item name="core" type="cbb8eebc:String" user="core" />
+              <item name="Service" type="cbb8eebc:String" user="Service" />
+              <item name="Validator" type="cbb8eebc:String" user="Validator" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="blog" type="cbb8eebc:String" user="blog" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,12 +513,13 @@
       <workItem from="1508677824533" duration="1880000" />
       <workItem from="1508751840229" duration="3615000" />
       <workItem from="1508766382966" duration="12518000" />
-      <workItem from="1508783059953" duration="165000" />
+      <workItem from="1508783059953" duration="487000" />
+      <workItem from="1508834447610" duration="1081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328583000" />
+    <option name="totallyTimeSpent" value="329986000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,7 +531,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="151" width="1908" height="869" extended-state="0" />
+    <frame x="543" y="145" width="1908" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13871308" sideWeight="0.4904988" order="1" side_tool="false" content_ui="combo" />
@@ -667,27 +651,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/form.js" />
-    <entry file="file://$PROJECT_DIR$/public/css/x-sm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/sm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/md.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/contactForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -720,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/Public/List.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -853,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Views/Error/404.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Controller/Twig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -869,18 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/app/Controller/Post/Manage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="87" column="17" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="528">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -893,18 +832,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/Post/Manage.php">
+    <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        <state relative-caret-position="726">
+          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/Templates/Default.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/Error/404.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="187" column="19" lean-forward="true" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/md.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="22" selection-end-column="24" />
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/Public/List.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="91" column="50" lean-forward="false" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/sm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/x-sm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="46" column="1" lean-forward="false" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding />
         </state>
       </provider>
