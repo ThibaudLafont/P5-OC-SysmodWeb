@@ -1,25 +1,6 @@
 <?php
 return
 [
-//Variables d'environnement
-    //PDO
-    'db_host' => 'labSQL',
-    'db_name' => 'labBDD',
-    'db_user' => 'root',
-    'db_pass' => 'pomme',
-
-    //TWIG
-    'viewsPath' => ROOT . '/app/Views',
-
-    //SWIFTMAILER
-    'smtp_host'         => 'smtp.gmail.com',
-    'smtp_port'         => '465',
-    'mail_protocol'     => 'ssl',
-
-    'mail_user' => 'thiblaf10@gmail.com',
-    'mail_pass' => '95pomme95',
-
-
 //Classes externes
     //Natives
     /////////
@@ -63,7 +44,7 @@ return
         return $transport
             ->setUsername($this->get('mail_user'))
             ->setPassword($this->get('mail_pass'))
-        ;
+            ;
     },
     'Swift\Mailer' => function(){
         return new \Swift_Mailer($this->get('Swift\Transport'));
@@ -94,6 +75,9 @@ return
     },
 
     //Service
+    'Router' => function(){
+        return new \App\Service\Router($this);
+    },
     'Service\Mailer' => function(){
         return new \Core\Service\Mailer($this->get('Swift\Mailer'));
     },
@@ -132,19 +116,5 @@ return
         return new \App\Controller\Post\Manage(
             $this->get('Twig\Environnement')
         );
-    },
-
-//Call
-    'Controller\Post\Add' => function(){
-        $controller = $this->get('Controller\Post\Manage');
-
-        $table = $this->get('Table\Show');
-        $handler = $this->get('Handler\Add');
-
-        $controller->add($handler, $table);
-    },
-    'Controller\Post\Edit' => function($slug){
-        $controller = $this->get('Controller\Post\Manage');
-        $controller->edit($this->get('Handler\Edit', $slug));
     }
 ];

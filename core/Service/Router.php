@@ -8,6 +8,7 @@ class Router{
     public function route($pattern, $callback) {
         $this->routes[$pattern] = $callback;
     }
+
     public function addDefinitions($path){
         $routes = require($path);
         if(is_array($routes)){
@@ -16,6 +17,7 @@ class Router{
             }
         }
     }
+
     public function execute($uri) {
         foreach ($this->routes as $pattern => $callback) {
             if (preg_match($pattern, $uri, $params) === 1) {
