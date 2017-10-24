@@ -1,5 +1,5 @@
-#Blog PHP 
-#####Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
+# Blog PHP   
+##### Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
 
 Ce projet a pour but de créer un blog et portfolio administrable. 
 Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
@@ -20,16 +20,16 @@ Consignes d'installation :
         ->PDO
         
             'db_host'  => 'labSQL',  //Hote SGBD
-            'db_name'  => 'labBDD',    //Nom de la base
+            'db_name'  => 'labBDD',  //Nom de la base
             'db_user'  => 'root',    //User SGBD
             'db_pass'  => 'pomme',   //Password SGBD
             
         
         ->SWIFTMAILER
         
-            'smtp_host'         => 'smtp.gmail.com',    //Serveur SMTP de votre client mail
-            'smtp_port'         => '465',               //Port de votre client mail
-            'mail_protocol'     => 'ssl',               //Protocole mail utilisé par votre client
+            'smtp_host'         => 'smtp.gmail.com',   //Serveur SMTP de votre client mail
+            'smtp_port'         => '465',              //Port de votre client mail
+            'mail_protocol'     => 'ssl',              //Protocole mail utilisé par votre client
             
             'mail_user' => 'thiblaf10@gmail.com',      //Où seront envoyés les mails de contact
             'mail_pass' => '95pomme95',                //Password de votre mail
