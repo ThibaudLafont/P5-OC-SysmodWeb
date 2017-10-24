@@ -11,19 +11,22 @@ namespace App\Service\Form\Handler\Post;
 
 class Edit extends Post
 {
-    private $slug;
+    private $id;
 
-    public function __construct(\App\Model\Table\Admin $admin, \App\Model\Table\Show $show, $slug){
+    public function __construct(\App\Model\Table\Admin $admin, \App\Model\Table\Show $show, $id){
         parent::__construct($admin);
         $this->setTable('show', $show);
-        $this->slug = $slug;
+        $this->id = $id;
     }
 
     public function GETEntity()
     {
-        $slug = $this->slug;
+        $id = $this->id;
 
-        return $this->getTable('show')->find($slug);
+        $entity = $this->getTable('show')->find($id);
+
+        if(!$entity) header('Location: /404/');
+        else return $entity;
     }
 
     public function execute($entity)
