@@ -1,29 +1,63 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 01/10/17
- * Time: 18:44
- */
-
 namespace Core\Model\Table;
 
+//Uses
 use \Core\Model\Db\PDO;
 
+/**
+ * Class Table
+ *
+ * Base de toute classe agissant en intermédiaire \Core\Model\Db\PDO -> Controller
+ *
+ * Dependency : \Core\Model\Db\PDO
+ */
 abstract class Table
 {
 
+    /**
+     * @var \Core\Model\Db\PDO
+     */
     protected $db;
 
+    /**
+     * @param \Core\Model\Db\PDO $db
+     */
     public function __construct(PDO $db){
         $this->setDb($db);
     }
 
-    private function setDb(PDO $db){
-        $this->db = $db;
+
+    ////METHODS
+
+    /**
+     * Execute dynamiquement l'insertion d'une entrée dans une table choisie
+     *
+     * @param String $table Nom de la table
+     * @param array  $data  Tableau à clé contenant les champs de la table et les valeurs à leur assigner
+     */
+    public function insert(String $table, Array $data){
+        $sqlFields = [];
+        $sqlSet = [];
+
+        foreach($data as $key => $value){
+            $sqlFields[] = $key;
+            $sqlSet[] = ':' . $key;
+        }
+
+        $sqlFields = implode(', ', $sqlFields);
+        $sqlSet = implode(', ', $sqlSet);
+        $statement = "INSERT INTO {$table}({$sqlFields}) VALUES ({$sqlSet})";
+        $this->db->prepare($statement, $data);
     }
 
-    public function update($table, $id, $data){
+    /**
+     * Execute dynamiquement la mise à jour d'une entrée dans une table choisie
+     *
+     * @param String $table Nom de la table à mettre à jour
+     * @param Int    $id    Id de l'entrée visée
+     * @param array  $data  Tableau à clé contenant les champs de la table visés et les valeurs à leur assigner
+     */
+    public function update(String $table, Int $id, Array $data){
         $sqlSet = [];
         $attributes = [];
 
@@ -38,19 +72,14 @@ abstract class Table
         $this->db->prepare("UPDATE {$table} SET $sqlSet WHERE id=?", $attributes, null);
     }
 
-    public function insert($table, $data){
-        $sqlFields = [];
-        $sqlSet = [];
 
-        foreach($data as $key => $value){
-            $sqlFields[] = $key;
-            $sqlSet[] = ':' . $key;
-        }
+    ////SETTERS
 
-        $sqlFields = implode(', ', $sqlFields);
-        $sqlSet = implode(', ', $sqlSet);
-        $statement = "INSERT INTO {$table}({$sqlFields}) VALUES ({$sqlSet})";
-        $this->db->prepare($statement, $data);
+    /**
+     * @param \Core\Model\Db\PDO $db
+     */
+    private function setDb(PDO $db){
+        $this->db = $db;
     }
 
 }

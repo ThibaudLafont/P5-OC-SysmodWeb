@@ -1,0 +1,31 @@
+{% extends "Templates/Default.twig" %}
+
+{% block view %}
+
+<section id="blog_form" class="py-4 container">
+
+    <!-- Formulaire -->
+    <form class="col mb-3" action='' method='post'>
+
+        {{ form|raw }}
+
+        <!--Gestion dynamique de la valeur du bouton submit -->
+        {% if title == 'Ajouter un article' %}
+            <input type="submit" value="Ajouter"/>
+        {% else %}
+            <input type="submit" value="Modifier"/>
+        {% endif %}
+
+    </form>
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+
+    <!-- Gestion du positionnement de Window si soumission de données erronnées -->
+    <script src="/public/js/scrollToForm.js"></script>
+    <script src="/public/js/blogForm.js" type="text/javascript" async></script>
+
+{% endblock %}

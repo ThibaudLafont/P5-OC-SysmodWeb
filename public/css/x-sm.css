@@ -40,3 +40,8 @@ header a.navbar-toggler{
     white-space: normal;
     width : 100%;
 }
+
+/*Posts list*/
+.post_details{
+    text-align : center !important;
+}

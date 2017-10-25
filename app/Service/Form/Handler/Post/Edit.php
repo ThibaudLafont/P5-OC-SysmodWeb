@@ -1,31 +1,40 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 08/10/17
- * Time: 23:06
- */
-
 namespace App\Service\Form\Handler\Post;
 
+//Uses
+//Table
+use App\Model\Table\Admin;
+use App\Model\Table\Show;
 
-class Edit extends Post
+/**
+ * Class Edit
+ * @package App\Service\Form\Handler\Post
+ */
+class Edit extends \App\Service\Form\Handler\Post\Post
 {
-    private $slug;
+    /**
+     * @var Int Id du post à éditer
+     */
+    private $id;
 
-    public function __construct(\App\Model\Table\Admin $admin, \App\Model\Table\Show $show, $slug){
+    /**
+     * Edit constructor.
+     * @param Admin $admin
+     * @param Show  $show
+     * @param Int   $id
+     */
+    public function __construct(Admin $admin, Show $show, $id){
         parent::__construct($admin);
         $this->setTable('show', $show);
-        $this->slug = $slug;
+        $this->id = $id;
     }
 
-    public function GETEntity()
-    {
-        $slug = $this->slug;
 
-        return $this->getTable('show')->find($slug);
-    }
+    ////METHODS
 
+    /**
+     * @param Post $entity
+     */
     public function execute($entity)
     {
         $this->getTable('admin')->edit($entity);
@@ -33,4 +42,20 @@ class Edit extends Post
         $url = $entity->getUrl();
         header('Location: ' . $url);
     }
+
+    /**
+     * Ici on redéfini la fonction parente pour hydrater le form avec les données du post à éditer
+     *
+     * @return \App\Model\Entity\Post
+     */
+    public function GETEntity()
+    {
+        $id = $this->id;
+
+        $entity = $this->getTable('show')->find($id);
+
+        if(!$entity) header('Location: /404/');
+        else return $entity;
+    }
+
 }

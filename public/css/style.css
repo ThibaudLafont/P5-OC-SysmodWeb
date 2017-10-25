@@ -1,16 +1,3 @@
-@font-face {
-    font-family: "code";
-    src: url("/public/typos/code.otf");
-}
-@font-face {
-    font-family: "mono";
-    src: url("/public/typos/mono.ttf");
-}
-@font-face {
-    font-family: "uni";
-    src: url("/public/typos/uni.ttf");
-}
-
 /*Queries Display*/
 .md-show{
     display:none;
@@ -21,6 +8,11 @@
 
 /*General*/
 html{
+    position : relative;
+    min-height: 100%;
+}
+body{
+    margin-bottom: 56px;
 }
 a{
     color: #1a1a1a;
@@ -38,6 +30,10 @@ hr.darkGrey
     border-color:#777777;
 }
 footer{
+    position : absolute;
+    bottom : 0;
+    left:0;
+    right:0;
     color:white;
     background-color: #64cf77;
     text-align: center;
@@ -75,6 +71,16 @@ footer{
     margin:auto;
 }
 
+/*404*/
+#redirect_parent{
+    text-align: center;
+}
+#redirect_parent a {
+    display:block;
+    background-color: #64CF77;
+    padding: 0.5rem 0.75rem;
+    color : white;
+}
 /*Gestion des formulaires*/
 form *{
     width:100%;
@@ -164,7 +170,7 @@ header a.navbar-brand img{
 
 /*Post Element*/
 .post_el{
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     border-bottom : 1px solid #FF5D00;
     color: #5d5d5d;
     text-align: justify;

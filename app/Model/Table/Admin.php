@@ -1,44 +1,56 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 09/10/17
- * Time: 22:13
- */
-
 namespace App\Model\Table;
 
+//Uses
+use App\Model\Entity\Post;
+use Core\Model\Db\PDO;
 
+/**
+ * Class Admin
+ * @package App\Model\Table
+ *
+ * Extension de Core\Model\Table servant à l'ajout et la modification des posts via \Core\Model\Db\PDO
+ */
 class Admin extends \Core\Model\Table\Table
 {
 
-    private $now;
+    /**
+     * @var string $now DateTime actuel
+     */
+    private $now,
+            $dateTime;
 
-    public function __construct(\Core\Model\Db\PDO $pdo, \DateTime $dateTime){
+    /**
+     * Admin constructor
+     * @param PDO $pdo
+     * @param \DateTime $dateTime
+     */
+    public function __construct(PDO $pdo, \DateTime $dateTime){
         parent::__construct($pdo);
-        $this->now = $dateTime->format('Y-m-d H:i');
+        $this->setDateTime($dateTime);
     }
 
-    public function statementParams($entity){
 
-        return [
-            'title' => $entity->getTitle(),
-            'author' => $entity->getAuthor(),
-            'sum' => $entity->getSum(),
-            'content' => $entity->getContent(),
-            is_null($entity->getId()) ? 'date' : 'editDate' => $this->now
-        ];
+    ////METHODS
 
-    }
+    /**
+     * @param Post $entity
+     */
+    public function add(Post $entity){
 
-    public function add($entity){
-
+        //On insère le post en BDD
         $values = $this->statementParams($entity);
         $this->insert('post', $values);
 
+        //On attribue l'ID à l'entity pour qu'elle puisse construire une URL
+        $id = $this->db->lastInsertId();
+        $entity->setId($id);
     }
 
-    public function edit($entity){
+    /*
+     * @param Post $entity
+     */
+    public function edit(Post $entity){
 
         $id = $entity->getId();
         $values = $this->statementParams($entity);
@@ -46,5 +58,56 @@ class Admin extends \Core\Model\Table\Table
 
     }
 
+    /**
+     * @param $entity
+     * @return array
+     */
+    public function statementParams(Post $entity){
+
+        $this->setNow();
+
+        return [
+            'title' => $entity->getTitle(),
+            'author' => $entity->getAuthor(),
+            'sum' => $entity->getSum(),
+            'content' => $entity->getContent(),
+            is_null($entity->getId()) ? 'date' : 'editDate' => $this->getNow()
+        ];
+
+    }
+
+
+    ////SETTERS
+
+    /**
+     * @param \DateTime $dateTime
+     */
+    public function setDateTime(\DateTime $dateTime){
+        $this->dateTime = $dateTime;
+    }
+
+    /**
+     * Assigne le datetime actuel
+     */
+    public function setNow(){
+        $this->now = $this->getDateTime()->format('Y-m-d H:i');
+    }
+
+
+    ////GETTERS
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateTime(){
+        return $this->dateTime;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNow(){
+        return $this->now;
+    }
 
 }

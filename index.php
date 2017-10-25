@@ -1,55 +1,30 @@
 <?php
-//tmp
-function vardump($variable){
-
-    echo '<pre>';
-    var_dump($variable);
-    echo '</pre>';
-
-}
-
-//ROOT path
+//ROOT PATH
+///////////
 define('ROOT', __DIR__);
 
-//Autoloaders persos
-require(ROOT . '/app/Autoloader.php');
-\App\Autoloader::register();
-require(ROOT . '/core/Autoloader.php');
-\Core\Autoloader::register();
 
-//Autoloader Composer
-require_once ROOT . '/vendor/autoload.php';
+//AUTOLOADERS
+/////////////
+require(ROOT . '/app/Service/Autoloader.php'); //Perso
+\App\Service\Autoloader::register();
 
-//Appel du DIC et chargement de la config
+require_once ROOT . '/vendor/autoload.php';    //Composer
+
+
+//DIC
+/////
 $dic = new \Core\Service\DIC();
-$dic->addDefinitions(ROOT . '/config/config.php');
 
-//Chargement du router et des routes
-$router = new \Core\Service\Router();
+$dic->addDefinitions(ROOT . '/config/DIC/config.php');   //Variables d'environnement
+$dic->addDefinitions(ROOT . '/config/DIC/class.php');    //Classes
+$dic->addDefinitions(ROOT . '/config/DIC/method.php');   //Appel méthodes classe nécessitant dépendance
 
-$router->route('/^\/\/?$/', function() use ($dic){
-    $controller = $dic->get('Controller\Blog');
-	$controller->index();
-});
-$router->route('/^\/blog\/?$/', function() use ($dic){
-    $controller = $dic->get('Controller\Post\Show');
-	$controller->list();
-});
-$router->route('/^\/blog\/(.+)\/?$/', function($slug) use ($dic){
-    $controller = $dic->get('Controller\Post\Show');
-	$controller->show($slug);
-});
-$router->route('/^\/admin\/add\/?$/', function() use ($dic){
-    $dic->get('Controller\Post\Add');
-});
-$router->route('/^\/admin\/edit\/(.+)\/?$/', function($slug) use ($dic){
-    $dic->get('Controller\Post\Edit', $slug);
-});
 
-//Execution du router
-try{
-    $router->execute($_SERVER['REQUEST_URI']);
-}catch(\Exception $e){
-    echo'notfound';
-}
+//ROUTER
+////////
+$router = $dic->get('Router');
 
+$router->addDefinitions(ROOT . '/config/Router/routes.php');  //Ajout des routes
+
+$router->execute($_SERVER['REQUEST_URI']);                    //Execution du router

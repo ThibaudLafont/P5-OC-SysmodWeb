@@ -1,21 +1,31 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: thib
- * Date: 09/10/17
- * Time: 15:03
- */
-
 namespace App\Service\Form\Handler\Post;
 
+//Uses
+use Core\Model\Table\Table;
+use App\Model\Table\Admin;
 
 abstract class Post extends \Core\Service\Form\Handler
 {
+    /**
+     * @var Array Contient des instances de Core\Model\Table\Table
+     */
     protected $table;
 
-    public function __construct(\App\Model\Table\Admin $table){
+    /**
+     * Post constructor.
+     * @param Admin $table
+     */
+    public function __construct(Admin $table){
         $this->setTable('admin', $table);
     }
+
+
+    ////METHODS
+
+    /**
+     * @return \Core\Model\Entity\Entity
+     */
     public function POSTEntity()
     {
         $POST_values = $this->post2EntityParams(['id', 'title', 'author', 'sum', 'content']);
@@ -23,10 +33,27 @@ abstract class Post extends \Core\Service\Form\Handler
         $entity = $this->buildEntity($POST_values);
         return $entity;
     }
-    public function setTable($key, \Core\Model\Table\Table $table){
+
+
+    ////SETTERS
+
+    /**
+     * @param String $key
+     * @param Table  $table
+     */
+    public function setTable($key, Table $table){
         $this->table[$key] = $table;
     }
+
+
+    ////GETTERS
+
+    /**
+     * @param  string $key
+     * @return Table
+     */
     public function getTable($key = 'admin'){
         return $this->table[$key];
     }
+
 }
