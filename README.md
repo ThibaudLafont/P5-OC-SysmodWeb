@@ -39,10 +39,9 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 --/app : Classes spécifiques à l'application   
 --/config : Fichiers de configuration et de définitions de dépendances   
 --/core : Classes générales   
+--/diagramme : diagrammes UML du projet
 --/public : Fichiers HTML/CSS/JS/DOWNLOABLE/IMG   
 --/vendor : Dépendances exterieures
-
-- Vous pouvez trouver les diagrammes UML [de classe](https://sysmod-web.fr/download/uml_class_sysweb.png) et [de séquencce](https://sysmod-web.fr/download/seq_uml_sysweb.zip)
 
 - Les classes suivent la structure suivante   
  (Chacune des sous-sections de méthodes est classée par ordre alphabétique) :
