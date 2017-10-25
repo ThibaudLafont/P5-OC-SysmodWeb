@@ -12,7 +12,7 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 #### Consignes d'installation : 
 
 - Le site utilise MySQL comme SGBD.  
-  Vous pouvez télécharger un jeu de données pour la base SQL [ici](https://sysmod-web/download/db_sysweb.sql), et l'importer sur votre serveur
+  Vous pouvez télécharger un jeu de données pour la base SQL [ici](https://sysmod-web.fr/download/db_sysweb.sql), et l'importer sur votre serveur
 - Téléchargez ou clonez ce dépot github. Votre serveur Web doit être apache et accepter les .htaccess
 - Rendez vous dans /config/DIC/config.php et modifiez les différentes variables pour qu'elles correspondent à votre environnement.  
 
@@ -42,7 +42,7 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 --/public : Fichiers HTML/CSS/JS/DOWNLOABLE/IMG   
 --/vendor : Dépendances exterieures
 
-- Vous pouvez trouver les diagrammes UML [de classe](https://sysmod-web/download/class_uml_sysweb.zip) et [de séquencce](https://sysmod-web/download/seq_uml_sysweb.zip)
+- Vous pouvez trouver les diagrammes UML [de classe](https://sysmod-web.fr/download/uml_class_sysweb.png) et [de séquencce](https://sysmod-web.fr/download/seq_uml_sysweb.zip)
 
 - Les classes suivent la structure suivante   
  (Chacune des sous-sections de méthodes est classée par ordre alphabétique) :

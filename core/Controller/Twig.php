@@ -57,16 +57,6 @@ abstract class Twig extends \Core\Controller\Controller
     }
 
 
-    ////GETTERS
-
-    /**
-     * @return \Twig_Environment
-     */
-    protected function getTwig(){
-        return $this->twig;
-    }
-
-
     ////SETTERS
 
     /**
@@ -74,6 +64,16 @@ abstract class Twig extends \Core\Controller\Controller
      */
     protected function setTwig(\Twig_Environment $twig){
         $this->twig = $twig;
+    }
+
+
+    ////GETTERS
+
+    /**
+     * @return \Twig_Environment
+     */
+    protected function getTwig(){
+        return $this->twig;
     }
 
 }

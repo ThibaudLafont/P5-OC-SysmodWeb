@@ -89,19 +89,6 @@ abstract class Field{
     }
 
     /**
-     * Controle et assigne $this->validators
-     *
-     * @param array $validators Tableau contenant des instances de \Core\Service\Validator\Validator
-     */
-    public function setValidators(Array $validators){
-        foreach ($validators as $validator){
-            if ($validator instanceof \Core\Service\Validator\Validator && !in_array($validator, $this->validators)){
-                $this->validators[] = $validator;
-            }
-        }
-    }
-
-    /**
      * Execute un à un les validators stockés dans l'attribut $validators
      * Le cas échéant, s'arrête au premier critère non respecté et stocke le message du validator en attribut
      *
@@ -166,6 +153,19 @@ abstract class Field{
      */
     public function setName(String $name){
         $this->name = $name;
+    }
+
+    /**
+     * Controle et assigne $this->validators
+     *
+     * @param array $validators Tableau contenant des instances de \Core\Service\Validator\Validator
+     */
+    public function setValidators(Array $validators){
+        foreach ($validators as $validator){
+            if ($validator instanceof \Core\Service\Validator\Validator && !in_array($validator, $this->validators)){
+                $this->validators[] = $validator;
+            }
+        }
     }
 
     /**
