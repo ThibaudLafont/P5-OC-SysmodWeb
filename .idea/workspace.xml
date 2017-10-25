@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Controller/Twig.php" afterPath="$PROJECT_DIR$/core/Controller/Twig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Field/Field.php" afterPath="$PROJECT_DIR$/core/Model/Form/Field/Field.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Form.php" afterPath="$PROJECT_DIR$/core/Model/Form/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Public/Index.twig" afterPath="$PROJECT_DIR$/app/Views/Public/Index.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Validator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Validator/Validator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-639">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NotNull.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Service/Validator/NotNull.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,17 +91,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Show.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Show.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="497">
-              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding>
                 <element signature="e#439#590#0#PHP" expanded="false" />
                 <element signature="e#1150#1507#0#PHP" expanded="false" />
                 <element signature="e#1578#1658#0#PHP" expanded="false" />
                 <element signature="e#1723#1785#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Views/Public/Index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="127" column="32" lean-forward="false" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,7 +198,6 @@
         <option value="$PROJECT_DIR$/app/Views/Admin/Edit.twig" />
         <option value="$PROJECT_DIR$/app/Views/Admin/Form.twig" />
         <option value="$PROJECT_DIR$/app/Views/Error/404.twig" />
-        <option value="$PROJECT_DIR$/app/Views/Public/Index.twig" />
         <option value="$PROJECT_DIR$/app/Views/Public/List.twig" />
         <option value="$PROJECT_DIR$/app/Views/Public/Show.twig" />
         <option value="$PROJECT_DIR$/app/Views/Templates/Default.twig" />
@@ -226,6 +221,7 @@
         <option value="$PROJECT_DIR$/core/Model/Form/Form.php" />
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Field.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/Views/Public/Index.twig" />
       </list>
     </option>
   </component>
@@ -712,12 +708,12 @@
       <workItem from="1508766382966" duration="12518000" />
       <workItem from="1508783059953" duration="487000" />
       <workItem from="1508834447610" duration="41932000" />
-      <workItem from="1508920828498" duration="5875000" />
+      <workItem from="1508920828498" duration="6024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376712000" />
+    <option name="totallyTimeSpent" value="376861000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -765,13 +761,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Views/Public/List.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/Templates/Default.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1258,13 +1247,21 @@
     <entry file="file://$PROJECT_DIR$/app/Controller/Post/Show.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding>
             <element signature="e#439#590#0#PHP" expanded="false" />
             <element signature="e#1150#1507#0#PHP" expanded="false" />
             <element signature="e#1578#1658#0#PHP" expanded="false" />
             <element signature="e#1723#1785#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/Public/Index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="127" column="32" lean-forward="false" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
