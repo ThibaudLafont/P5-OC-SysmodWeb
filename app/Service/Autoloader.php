@@ -13,7 +13,7 @@ class Autoloader
     /**
      * Appelle la fonction autoload quand une classe est demandée et non définie
      */
-    static function register(){
+    static public function register(){
         spl_autoload_register(array(static::class, 'autoload'));
     }
 
@@ -22,7 +22,7 @@ class Autoloader
      *
      * @param $class
      */
-    static function autoload($class){
+    static public function autoload($class){
         if(strpos($class, 'App\\') === 0 || strpos($class, 'Core\\') === 0)
         {
             $class = lcfirst($class);

@@ -1,6 +1,7 @@
 {
     "name": "symphony/sysmod-web",
     "description": "Integration of Twig and SwiftMailer",
+    "license" : "ECL-2.0",
     "authors": [
         {
             "name": "Thibaud Lafont",

@@ -93,5 +93,7 @@ class PDO{
         $result = $this->fetchForMe($req, $entity, $one);
         return $result;
 	}
+
 }
+
 

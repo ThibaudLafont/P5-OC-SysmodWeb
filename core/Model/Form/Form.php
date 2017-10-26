@@ -99,7 +99,7 @@ class Form{
         foreach($this->fields as $field){
             if(!$field->validate()) $valid = false;
         }
-        $this->setIsValid($valid);
+        $this->setValid($valid);
         return $valid;
     }
 
@@ -116,7 +116,7 @@ class Form{
     /**
      * @param bool $valid
      */
-    public function setIsValid(Bool $valid){
+    public function setValid(Bool $valid){
         if(is_bool($valid)) $this->isValid = $valid;
     }
 
@@ -144,7 +144,7 @@ class Form{
      *
      * @return bool|null
      */
-    public function getIsValid(){
+    public function isValid(){
         return $this->isValid;
     }
 
@@ -155,7 +155,7 @@ class Form{
      * @return HTML|''
      */
     public function getValidatedMessage(){
-        $valid =$this->getIsValid();
+        $valid = $this->isValid();
         if(!is_null($valid)){
             if($valid === false) $key = 'error';
             else $key = 'success';
