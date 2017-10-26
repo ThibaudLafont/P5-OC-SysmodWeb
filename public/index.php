@@ -1,7 +1,7 @@
 <?php
 //ROOT PATH
 ///////////
-define('ROOT', __DIR__);
+define('ROOT', dirname(__DIR__));
 
 
 //AUTOLOADERS
