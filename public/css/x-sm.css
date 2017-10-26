@@ -33,6 +33,7 @@ header a.navbar-toggler{
     display: none;
 }
 .sub_head_item span{
+    padding-left:0;
     display: block;
     text-align: center;
 }
