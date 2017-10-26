@@ -9,7 +9,7 @@
             "homepage": "https://sysmod-web.fr",
             "role": "Developer"
         }
-    ]
+    ],
     "require": {
         "twig/twig": "^2.0",
         "swiftmailer/swiftmailer": "^6.0"
