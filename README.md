@@ -1,5 +1,5 @@
 # Blog PHP   
-## Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
+### Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
 
 Ce projet a pour but de créer un blog et portfolio administrable. 
 Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC.
@@ -7,10 +7,10 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC.
 Ce readme est composé de deux parties, les consignes d'installation puis des informations 
 sur l'organisation du code.
 
-### Consignes d'installation : 
+## Consignes d'installation : 
 Suivez les deux étapes ci-dessous pour implémenter le projet sur votre serveur
 
-#### Paramétrage du serveur
+### Paramétrage du serveur
 Le site a pour répertoire web /public, et toute requête HTTP ne conduisant pas à un fichier 
 existant doit être redirigée vers /public/index.php. Suivez la procédure ci-dessous pour 
 le paramétrage d'un serveur Apache2   
@@ -40,7 +40,7 @@ le paramétrage d'un serveur Apache2
                 
             </Directory>   
 
-#### Implémentation du code
+### Implémentation du code
 - Le site utilise MySQL comme SGBD.  
   Vous pouvez télécharger un jeu de données pour la base SQL [ici](https://sysmod-web.fr/download/db_sysweb.sql), et l'importer sur votre serveur
 - Téléchargez ou clonez ce dépot github.   
@@ -62,14 +62,14 @@ le paramétrage d'un serveur Apache2
         'mail_user'     => 'mail@mail.com',    //Où seront envoyés les mails de contact
         'mail_pass'     => 'password',         //Password de votre mail
         
-### Lecture du projet
+## Lecture du projet
             
 Trois dépendances ont été utilisées :   
 - TWIG           _ Générateur de templates  
 - SwiftMailer    _ Module Symphony d'envoi de mail 
 - Bootstrap      _ Framework CSS
 
-#### Organisation du code 
+### Organisation du code 
 
 - Fichiers :   
 
