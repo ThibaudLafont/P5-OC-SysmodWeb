@@ -7,7 +7,7 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC.
 Ce readme est composé de deux parties, les consignes d'installation puis des informations 
 sur l'organisation du code.
 
-## Consignes d'installation : 
+## Consignes d'installation
 Suivez les deux étapes ci-dessous pour implémenter le projet sur votre serveur
 
 ### Paramétrage du serveur
@@ -103,3 +103,4 @@ Trois dépendances ont été utilisées :
             }
             
     (Chacune des sous-sections de méthodes est classée par ordre alphabétique) 
+    
