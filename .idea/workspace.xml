@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Blog.php" afterPath="$PROJECT_DIR$/app/Controller/Blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Post/Manage.php" afterPath="$PROJECT_DIR$/app/Controller/Post/Manage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Post/Show.php" afterPath="$PROJECT_DIR$/app/Controller/Post/Show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Entity/Contact.php" afterPath="$PROJECT_DIR$/app/Model/Entity/Contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Entity/Post.php" afterPath="$PROJECT_DIR$/app/Model/Entity/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Table/Admin.php" afterPath="$PROJECT_DIR$/app/Model/Table/Admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Table/Show.php" afterPath="$PROJECT_DIR$/app/Model/Table/Show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Autoloader.php" afterPath="$PROJECT_DIR$/app/Service/Autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Builder/Contact.php" afterPath="$PROJECT_DIR$/app/Service/Form/Builder/Contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Builder/Post.php" afterPath="$PROJECT_DIR$/app/Service/Form/Builder/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Add.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Mailer.php" afterPath="$PROJECT_DIR$/app/Service/Mailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Router.php" afterPath="$PROJECT_DIR$/app/Service/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Admin/Add.twig" afterPath="$PROJECT_DIR$/app/Views/Admin/Add.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Error/404.twig" afterPath="$PROJECT_DIR$/app/Views/Error/404.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Public/Index.twig" afterPath="$PROJECT_DIR$/app/Views/Public/Index.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/Public/Show.twig" afterPath="$PROJECT_DIR$/app/Views/Public/Show.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/DIC/class.php" afterPath="$PROJECT_DIR$/config/DIC/class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/DIC/config.php" afterPath="$PROJECT_DIR$/config/DIC/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/DIC/method.php" afterPath="$PROJECT_DIR$/config/DIC/method.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/Router/routes.php" afterPath="$PROJECT_DIR$/config/Router/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Controller/Controller.php" afterPath="$PROJECT_DIR$/core/Controller/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Controller/Twig.php" afterPath="$PROJECT_DIR$/core/Controller/Twig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Db/PDO.php" afterPath="$PROJECT_DIR$/core/Model/Db/PDO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Entity/Entity.php" afterPath="$PROJECT_DIR$/core/Model/Entity/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Field/Field.php" afterPath="$PROJECT_DIR$/core/Model/Form/Field/Field.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Field/Input.php" afterPath="$PROJECT_DIR$/core/Model/Form/Field/Input.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Field/Text.php" afterPath="$PROJECT_DIR$/core/Model/Form/Field/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Form/Form.php" afterPath="$PROJECT_DIR$/core/Model/Form/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Table/Table.php" afterPath="$PROJECT_DIR$/core/Model/Table/Table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/DIC.php" afterPath="$PROJECT_DIR$/core/Service/DIC.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Form/Builder.php" afterPath="$PROJECT_DIR$/core/Service/Form/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Form/Handler.php" afterPath="$PROJECT_DIR$/core/Service/Form/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Mailer.php" afterPath="$PROJECT_DIR$/core/Service/Mailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Router.php" afterPath="$PROJECT_DIR$/core/Service/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Validator/Email.php" afterPath="$PROJECT_DIR$/core/Service/Validator/Email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Validator/MaxLength.php" afterPath="$PROJECT_DIR$/core/Service/Validator/MaxLength.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Validator/NotNull.php" afterPath="$PROJECT_DIR$/core/Service/Validator/NotNull.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Validator/SelectedStrip.php" afterPath="$PROJECT_DIR$/core/Service/Validator/SelectedStrip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Validator/Validator.php" afterPath="$PROJECT_DIR$/core/Service/Validator/Validator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,12 +83,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="783">
-                <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <first_editor relative-caret-position="374">
+                <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -140,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Service/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="704">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -269,8 +225,8 @@
         <option value="$PROJECT_DIR$/core/Service/Mailer.php" />
         <option value="$PROJECT_DIR$/core/Service/Router.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/Service/Autoloader.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -295,7 +251,7 @@
       <path value="" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-6" />
     <option name="y" value="66" />
     <option name="width" value="792" />
@@ -731,12 +687,12 @@
       <workItem from="1508783059953" duration="487000" />
       <workItem from="1508834447610" duration="41932000" />
       <workItem from="1508920828498" duration="6224000" />
-      <workItem from="1509007032419" duration="2782000" />
+      <workItem from="1509007032419" duration="3886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379843000" />
+    <option name="totallyTimeSpent" value="380947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +704,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="66" width="1920" height="1052" extended-state="6" />
+    <frame x="-6" y="66" width="1920" height="1052" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.4904988" order="1" side_tool="false" content_ui="combo" />
@@ -1266,22 +1222,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="783">
-            <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/app/Service/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

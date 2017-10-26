@@ -13,7 +13,17 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 
 - Le site utilise MySQL comme SGBD.  
   Vous pouvez télécharger un jeu de données pour la base SQL [ici](https://sysmod-web.fr/download/db_sysweb.sql), et l'importer sur votre serveur
-- Téléchargez ou clonez ce dépot github. Votre serveur Web doit être apache et accepter les .htaccess
+- Téléchargez ou clonez ce dépot github.   
+- Votre serveur Web doit effectuer une redirection vers /index.php quelque soit l'url demandée, sauf si elle représente un chemin vers un fichier existant.   
+  Pour un serveur apache vous devrez copier les règles suivantes dans un .htaccess à la racine du site, ou dans votre fichier de configuration Apache à l'intérieur de la balise <Directory /var/www/>
+  
+        RewriteEngine On   
+        RewriteCond %{REQUEST_FILENAME} !-f  
+        RewriteCond %{REQUEST_FILENAME} !-d  
+        RewriteRule ^(.*)$ /index.php [QSA,L]  
+        
+  
+       
 - Rendez vous dans /config/DIC/config.php et modifiez les différentes variables pour qu'elles correspondent à votre environnement.  
 
         ->PDO
