@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="" />
+    <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" afterPath="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Service/Form/Handler.php" afterPath="$PROJECT_DIR$/core/Service/Form/Handler.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,121 +32,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Validator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Validator/Validator.php">
+      <file leaf-file-name="Handler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/Service/Form/Handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DIC.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/DIC.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="-238">
+              <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
               <folding>
-                <element signature="e#803#932#0#PHP" expanded="false" />
-                <element signature="e#1165#1899#0#PHP" expanded="false" />
-                <element signature="e#2030#2157#0#PHP" expanded="false" />
+                <element signature="e#1232#1403#0#PHP" expanded="false" />
+                <element signature="e#1884#2096#0#PHP" expanded="false" />
+                <element signature="e#2818#3099#0#PHP" expanded="false" />
+                <element signature="e#3203#3785#0#PHP" expanded="false" />
+                <element signature="e#3862#3922#0#PHP" expanded="false" />
+                <element signature="e#3966#4077#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mailer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Mailer.php">
+      <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Model/Table/Table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="506">
+              <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding>
-                <element signature="e#362#432#0#PHP" expanded="false" />
-                <element signature="e#706#1148#0#PHP" expanded="false" />
-                <element signature="e#1478#1880#0#PHP" expanded="false" />
-                <element signature="e#1957#2020#0#PHP" expanded="false" />
-                <marker date="1509011857616" expanded="true" signature="1040:1093" ph="INSERT INTO $... " />
-                <marker date="1509011857616" expanded="true" signature="1814:1852" ph="UPDATE ${{$t... " />
+                <element signature="e#371#456#0#PHP" expanded="false" />
+                <element signature="e#532#793#0#PHP" expanded="false" />
+                <element signature="e#856#1055#0#PHP" expanded="false" />
+                <element signature="e#1124#1205#0#PHP" expanded="false" />
+                <element signature="e#1267#1331#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PDO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
+      <file leaf-file-name="Post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding>
-                <element signature="e#421#601#0#PHP" expanded="false" />
-                <element signature="e#1559#1640#0#PHP" expanded="false" />
-                <element signature="e#2333#2629#0#PHP" expanded="false" />
-                <element signature="e#3236#3477#0#PHP" expanded="false" />
+                <element signature="e#346#436#0#PHP" expanded="false" />
+                <element signature="e#517#728#0#PHP" expanded="false" />
+                <element signature="e#822#910#0#PHP" expanded="false" />
+                <element signature="e#998#1080#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robot.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/robot.txt">
+      <file leaf-file-name="Edit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Service/Autoloader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Router.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="735">
+              <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+              <folding>
+                <element signature="e#430#597#0#PHP" expanded="false" />
+                <element signature="e#664#829#0#PHP" expanded="false" />
+                <element signature="e#995#1192#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,6 +120,8 @@
       <find>alt=&quot;</find>
       <find>setIsValid</find>
       <find>getIsValid</find>
+      <find>POSTEntity</find>
+      <find>getEntity</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/core/Service/Router</dir>
@@ -199,9 +150,6 @@
         <option value="$PROJECT_DIR$/app/Service/Form/Builder/Contact.php" />
         <option value="$PROJECT_DIR$/app/Service/Form/Builder/Post.php" />
         <option value="$PROJECT_DIR$/app/Service/Form/Handler/Post/Add.php" />
-        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" />
-        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" />
-        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
         <option value="$PROJECT_DIR$/app/Service/Mailer.php" />
         <option value="$PROJECT_DIR$/app/Service/Router.php" />
         <option value="$PROJECT_DIR$/app/Views/Admin/Add.twig" />
@@ -219,7 +167,6 @@
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Input.php" />
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Text.php" />
         <option value="$PROJECT_DIR$/core/Model/Table/Table.php" />
-        <option value="$PROJECT_DIR$/core/Service/Form/Handler.php" />
         <option value="$PROJECT_DIR$/core/Service/Form/Builder.php" />
         <option value="$PROJECT_DIR$/core/Service/Validator/Email.php" />
         <option value="$PROJECT_DIR$/core/Service/Validator/MaxLength.php" />
@@ -234,6 +181,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/Model/Db/PDO.php" />
         <option value="$PROJECT_DIR$/robot.txt" />
+        <option value="$PROJECT_DIR$/core/Service/Form/Handler.php" />
+        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Contact.php" />
+        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php" />
+        <option value="$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php" />
       </list>
     </option>
   </component>
@@ -558,17 +509,6 @@
               <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Validator" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sysmodWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sysmodWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -694,12 +634,12 @@
       <workItem from="1508783059953" duration="487000" />
       <workItem from="1508834447610" duration="41932000" />
       <workItem from="1508920828498" duration="6224000" />
-      <workItem from="1509007032419" duration="4483000" />
+      <workItem from="1509007032419" duration="4815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381544000" />
+    <option name="totallyTimeSpent" value="381876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -883,45 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#430#597#0#PHP" expanded="false" />
-            <element signature="e#664#829#0#PHP" expanded="false" />
-            <element signature="e#995#1192#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#346#436#0#PHP" expanded="false" />
-            <element signature="e#517#728#0#PHP" expanded="false" />
-            <element signature="e#822#910#0#PHP" expanded="false" />
-            <element signature="e#998#1080#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#371#456#0#PHP" expanded="false" />
-            <element signature="e#532#793#0#PHP" expanded="false" />
-            <element signature="e#856#1055#0#PHP" expanded="false" />
-            <element signature="e#1124#1205#0#PHP" expanded="false" />
-            <element signature="e#1267#1331#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Service/Mailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -1088,23 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Service/Form/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding>
-            <element signature="e#1232#1403#0#PHP" expanded="false" />
-            <element signature="e#1508#1611#0#PHP" expanded="false" />
-            <element signature="e#1884#2096#0#PHP" expanded="false" />
-            <element signature="e#2278#2668#0#PHP" expanded="false" />
-            <element signature="e#2818#3099#0#PHP" expanded="false" />
-            <element signature="e#3203#3785#0#PHP" expanded="false" />
-            <element signature="e#3862#3922#0#PHP" expanded="false" />
-            <element signature="e#3966#4077#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Service/Form/Builder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="796">
@@ -1242,9 +1126,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/robot.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Service/Form/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#1232#1403#0#PHP" expanded="false" />
+            <element signature="e#1884#2096#0#PHP" expanded="false" />
+            <element signature="e#2818#3099#0#PHP" expanded="false" />
+            <element signature="e#3203#3785#0#PHP" expanded="false" />
+            <element signature="e#3862#3922#0#PHP" expanded="false" />
+            <element signature="e#3966#4077#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="e#371#456#0#PHP" expanded="false" />
+            <element signature="e#532#793#0#PHP" expanded="false" />
+            <element signature="e#856#1055#0#PHP" expanded="false" />
+            <element signature="e#1124#1205#0#PHP" expanded="false" />
+            <element signature="e#1267#1331#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#346#436#0#PHP" expanded="false" />
+            <element signature="e#517#728#0#PHP" expanded="false" />
+            <element signature="e#822#910#0#PHP" expanded="false" />
+            <element signature="e#998#1080#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service/Form/Handler/Post/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#430#597#0#PHP" expanded="false" />
+            <element signature="e#664#829#0#PHP" expanded="false" />
+            <element signature="e#995#1192#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

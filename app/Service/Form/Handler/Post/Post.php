@@ -26,7 +26,7 @@ abstract class Post extends \Core\Service\Form\Handler
     /**
      * @return \Core\Model\Entity\Entity
      */
-    public function POSTEntity()
+    public function entityPost()
     {
         $POST_values = $this->post2EntityParams(['id', 'title', 'author', 'sum', 'content']);
 
