@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Db/PDO.php" afterPath="$PROJECT_DIR$/core/Model/Db/PDO.php" />
-    </list>
+    <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SelectedStrip.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Validator/SelectedStrip.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Validator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Service/Validator/Validator.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PDO.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PDO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="180">
               <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="e#421#601#0#PHP" expanded="false" />
@@ -113,6 +101,16 @@
                 <element signature="e#2333#2629#0#PHP" expanded="false" />
                 <element signature="e#3236#3477#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="robot.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/robot.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Views/Admin/Edit.twig" />
         <option value="$PROJECT_DIR$/app/Views/Admin/Form.twig" />
         <option value="$PROJECT_DIR$/app/Views/Public/List.twig" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
@@ -236,6 +233,7 @@
         <option value="$PROJECT_DIR$/app/Service/Autoloader.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/Model/Db/PDO.php" />
+        <option value="$PROJECT_DIR$/robot.txt" />
       </list>
     </option>
   </component>
@@ -696,12 +694,12 @@
       <workItem from="1508783059953" duration="487000" />
       <workItem from="1508834447610" duration="41932000" />
       <workItem from="1508920828498" duration="6224000" />
-      <workItem from="1509007032419" duration="4108000" />
+      <workItem from="1509007032419" duration="4483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381169000" />
+    <option name="totallyTimeSpent" value="381544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,13 +747,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/md.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Model/Form/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -1238,7 +1229,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="180">
           <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="e#421#601#0#PHP" expanded="false" />
@@ -1246,6 +1237,14 @@
             <element signature="e#2333#2629#0#PHP" expanded="false" />
             <element signature="e#3236#3477#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
