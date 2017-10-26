@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb54b62f-ee15-4439-900f-1f23728f166c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/Model/Db/PDO.php" afterPath="$PROJECT_DIR$/core/Model/Db/PDO.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NotNull.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Validator/NotNull.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SelectedStrip.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Service/Validator/SelectedStrip.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -92,6 +81,38 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/Model/Table/Table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+              <folding>
+                <element signature="e#362#432#0#PHP" expanded="false" />
+                <element signature="e#706#1148#0#PHP" expanded="false" />
+                <element signature="e#1478#1880#0#PHP" expanded="false" />
+                <element signature="e#1957#2020#0#PHP" expanded="false" />
+                <marker date="1509011857616" expanded="true" signature="1040:1093" ph="INSERT INTO $... " />
+                <marker date="1509011857616" expanded="true" signature="1814:1852" ph="UPDATE ${{$t... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PDO.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding>
+                <element signature="e#421#601#0#PHP" expanded="false" />
+                <element signature="e#1559#1640#0#PHP" expanded="false" />
+                <element signature="e#2333#2629#0#PHP" expanded="false" />
+                <element signature="e#3236#3477#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,18 +143,6 @@
             <state relative-caret-position="660">
               <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxLength.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Service/Validator/MaxLength.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding>
-                <marker date="1509011873525" expanded="true" signature="1078:1079" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -208,7 +217,6 @@
         <option value="$PROJECT_DIR$/config/Router/routes.php" />
         <option value="$PROJECT_DIR$/core/Controller/Controller.php" />
         <option value="$PROJECT_DIR$/core/Controller/Twig.php" />
-        <option value="$PROJECT_DIR$/core/Model/Db/PDO.php" />
         <option value="$PROJECT_DIR$/core/Model/Entity/Entity.php" />
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Field.php" />
         <option value="$PROJECT_DIR$/core/Model/Form/Field/Input.php" />
@@ -227,6 +235,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/Service/Autoloader.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/core/Model/Db/PDO.php" />
       </list>
     </option>
   </component>
@@ -251,7 +260,7 @@
       <path value="" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-6" />
     <option name="y" value="66" />
     <option name="width" value="792" />
@@ -687,12 +696,12 @@
       <workItem from="1508783059953" duration="487000" />
       <workItem from="1508834447610" duration="41932000" />
       <workItem from="1508920828498" duration="6224000" />
-      <workItem from="1509007032419" duration="3886000" />
+      <workItem from="1509007032419" duration="4108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380947000" />
+    <option name="totallyTimeSpent" value="381169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,7 +713,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="66" width="1920" height="1052" extended-state="7" />
+    <frame x="-6" y="66" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.4904988" order="1" side_tool="false" content_ui="combo" />
@@ -1050,20 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#421#601#0#PHP" expanded="false" />
-            <element signature="e#1174#1436#0#PHP" expanded="false" />
-            <element signature="e#1544#1625#0#PHP" expanded="false" />
-            <element signature="e#2318#2614#0#PHP" expanded="false" />
-            <element signature="e#3221#3462#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Model/Entity/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1098,21 +1093,6 @@
           <folding>
             <element signature="e#460#864#0#PHP" expanded="false" />
             <marker date="1509011853863" expanded="true" signature="508:625" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Model/Table/Table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="e#362#432#0#PHP" expanded="false" />
-            <element signature="e#706#1148#0#PHP" expanded="false" />
-            <element signature="e#1478#1880#0#PHP" expanded="false" />
-            <element signature="e#1957#2020#0#PHP" expanded="false" />
-            <marker date="1509011857616" expanded="true" signature="1040:1093" ph="INSERT INTO $... " />
-            <marker date="1509011857616" expanded="true" signature="1814:1852" ph="UPDATE ${{$t... " />
           </folding>
         </state>
       </provider>
@@ -1238,6 +1218,34 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Model/Table/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="e#362#432#0#PHP" expanded="false" />
+            <element signature="e#706#1148#0#PHP" expanded="false" />
+            <element signature="e#1478#1880#0#PHP" expanded="false" />
+            <element signature="e#1957#2020#0#PHP" expanded="false" />
+            <marker date="1509011857616" expanded="true" signature="1040:1093" ph="INSERT INTO $... " />
+            <marker date="1509011857616" expanded="true" signature="1814:1852" ph="UPDATE ${{$t... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Model/Db/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#421#601#0#PHP" expanded="false" />
+            <element signature="e#1559#1640#0#PHP" expanded="false" />
+            <element signature="e#2333#2629#0#PHP" expanded="false" />
+            <element signature="e#3236#3477#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
