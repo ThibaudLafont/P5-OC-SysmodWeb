@@ -39,7 +39,7 @@ Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC
 --/app : Classes spécifiques à l'application   
 --/config : Fichiers de configuration et de définitions de dépendances   
 --/core : Classes générales   
---/diagramme : diagrammes UML du projet
+--/diagramme : diagrammes UML du projet   
 --/public : Fichiers HTML/CSS/JS/DOWNLOABLE/IMG   
 --/vendor : Dépendances exterieures
 
