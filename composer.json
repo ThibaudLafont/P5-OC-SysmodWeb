@@ -1,4 +1,14 @@
 {
+    "name": "symphony/sysmod-web",
+    "description": "Integration of Twig and SwiftMailer",
+    "authors": [
+        {
+            "name": "Thibaud Lafont",
+            "email": "thibaudlafont@gmail.com",
+            "homepage": "https://sysmod-web.fr",
+            "role": "Developer"
+        }
+    ]
     "require": {
         "twig/twig": "^2.0",
         "swiftmailer/swiftmailer": "^6.0"
