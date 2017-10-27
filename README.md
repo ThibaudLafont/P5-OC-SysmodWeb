@@ -80,7 +80,7 @@ Trois dépendances ont été utilisées :
         /public    : Fichiers HTML/CSS/JS/DOWNLOABLE/IMG   
         /vendor    : Dépendances exterieures   
 
-- Les classes ont la structure suivante :   
+- Les classes ont la structure suivante(Chacune des sous-sections de méthodes est classée par ordre alphabétique) :   
 
         <?php 
             //Namespace
@@ -102,5 +102,3 @@ Trois dépendances ont été utilisées :
                 
             }
             
-    (Chacune des sous-sections de méthodes est classée par ordre alphabétique)  
-   
