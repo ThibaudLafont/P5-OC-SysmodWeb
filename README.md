@@ -102,5 +102,6 @@ Trois dépendances ont été utilisées :
                 
             }
             
-    (Chacune des sous-sections de méthodes est classée par ordre alphabétique) 
+    (Chacune des sous-sections de méthodes est classée par ordre alphabétique)   
+    
     
