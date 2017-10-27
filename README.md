@@ -100,5 +100,5 @@ Trois dépendances ont été utilisées :
                 
                 //GETTERS
                 
-            }
+            }  
             
