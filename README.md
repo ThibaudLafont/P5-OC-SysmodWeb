@@ -1,6 +1,6 @@
 # Blog PHP 
 ### Projet 5 de la formation développeur d'applications PHP -- OpenClassrooms
-![Insight](https://insight.sensiolabs.com/projects/2ac9dc1a-d6ee-413e-a568-66dc8d80a212/big.png)
+![Insight](https://insight.sensiolabs.com/projects/2ac9dc1a-d6ee-413e-a568-66dc8d80a212/small.png)
 
 Ce projet a pour but de créer un blog et portfolio administrable. 
 Il n'utilisera pas de framework PHP et sera codé selon le modèle MVC.  
