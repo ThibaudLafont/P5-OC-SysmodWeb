@@ -48,7 +48,7 @@ class Edit extends \App\Service\Form\Handler\Post\Post
      *
      * @return \App\Model\Entity\Post
      */
-    public function GETEntity()
+    public function entityGet()
     {
         $id = $this->id;
 

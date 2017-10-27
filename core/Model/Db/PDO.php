@@ -30,13 +30,13 @@ class PDO{
      *
      * Utilisé par $this->query et $this->prepare
      *
-     * @param  PDOStatement $request
+     * @param  \PDOStatement $request
      * @param  String       $entity  Si renseigné, PDO hydratera l'objet correspondant
      *                               (!!! Le format est le nom complet de la classe, avec namespace !!!)
      * @param  Boolean      $one     Permet de choisir si l'on souhaite un ou plusieurs résultats
      * @return mixed|Array  $result  Une ou plusieurs entrées de la BDD, sous la forme d'un objet ou d'un tableau
      */
-	private function fetchForMe($request, $entity, $one){
+	private function fetchForMe(\PDOStatement $request, $entity, $one){
 
         if($entity !== null) $request->setFetchMode(\PDO::FETCH_CLASS, $entity);
 
@@ -93,5 +93,7 @@ class PDO{
         $result = $this->fetchForMe($req, $entity, $one);
         return $result;
 	}
+
 }
+
 

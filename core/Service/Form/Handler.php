@@ -41,7 +41,7 @@ abstract class Handler
      *
      * @return Entity $entity
      */
-    public abstract function POSTEntity();
+    public abstract function entityPost();
 
 
     ////METHODS
@@ -62,7 +62,7 @@ abstract class Handler
      *
      * @return Entity $entity
      */
-    public function GETEntity()
+    public function entityGet()
     {
         $entity = $this->buildEntity();
         return $entity;
@@ -89,9 +89,9 @@ abstract class Handler
      */
     public function process(){
         if($_SERVER['REQUEST_METHOD'] !== 'POST'){
-            $entity = $this->getEntity();
+            $entity = $this->entityGet();
         }else{
-            $entity = $this->postEntity();
+            $entity = $this->entityPost();
         }
 
         $this->setForm($entity);

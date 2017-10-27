@@ -24,6 +24,7 @@ a:hover{
 }
 hr{
     border-color: #64DF77;
+    min-height:1px;
 }
 hr.darkGrey
 {

@@ -43,7 +43,7 @@ class Contact extends \Core\Service\Form\Handler
     /**
      * @return \App\Model\Entity\Contact
      */
-    public function POSTEntity()
+    public function entityPost()
     {
         $entity_params = $this->post2EntityParams(['name', 'email', 'content']);
         $entity = $this->buildEntity($entity_params);
